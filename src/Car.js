@@ -20,17 +20,25 @@ export default class Car{
     // as fat arrow functions.
 
     drive(person) {
+        console.log("i'm starting to drive");
         let output = ""; // single-line quote assignment
         if ( typeof person.firstName != "undefined" ){
-            let output = `
-            ${person.firstName} is driving the car;
+            output = `
+            ${person.firstName} is driving a ${this.manufacturer}!
+
+
+            WHAHAHAHAHAHBWAHAHHA
+
+
+            Why am I doing this? Crazy
         `;
         } else {
-            let output = ` OMG!
+            output = ` OMG!
             no one is driving the car`;
         }
-        console.log( output );
+        console.log(output);
 
     };
 
 }
+

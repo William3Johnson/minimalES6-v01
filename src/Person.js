@@ -8,18 +8,20 @@ export default class Person{
         if (typeof firstName != "undefined"){
             this.firstName = firstName;
             console.log("the person created is named " + firstName);
-            this.init();
+            this.init("red");
         } else {
             console.log("error! check index.js. you need a name as an" +
                 ";argument when creating the person");
         }
     }
 
-    init() {
+    init(pantColor) {
+        console.log(pantColor);
         // assignable properties. available once a new Person()
         // is instantiated.
         this.car = "";
         this.hairColor = "";
+        console.log("hairColor at the time init is called is " + this.hairColor);
         this.height = 0;
         this.weight = 0;
     };
