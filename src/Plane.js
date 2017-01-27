@@ -13,17 +13,23 @@ export default class Plane{
 		this.manufacturer="manufacturer";
 		this.year="year";
 		this.name="name";
+		}else{
+			console.log("What do we have here? You need valid name, year to make a plane.");
+			this.name="no name";
+			this.year="no year";
+			this.manufacturer="no manufacturer";
 		}
 
 
 	}
 
-
-	fly(person){
+	fly(plane){
 		console.log("I'm starting to fly a Cessna")
 		let output = "";
-		if (typeof person.firstName !="undefined";
+		if (plane.Name !=undefined && plane.manufacturer !== undefined && typeof plane.year =='undefined';
 		output= `
+			The ${plane.year} ${plane.manufacturer} ${plane.name} is flying! 
+			Quite special!`
 
 		${person.firstName} is flying a ${this.manufacturer}!`
 	}
