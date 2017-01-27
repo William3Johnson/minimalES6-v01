@@ -5,11 +5,14 @@ export default class Plane{
 	constructor(name, manufacturer, year){
 		if (name !="undefined" && manunfacturer !== undefined && typeof year != undefined){ 
 		console.log("This name is " + name);
-		console.log("This year is" + manufacturer);
+		console.log("This year is" + year);
+		console.log("This plane is made by" + "manufacturer");
 			this.manufacturer = manufacturer;
 		}else{
 		console.log("hey man I'm  not flying a Cessna");
-		this.manufacturer="no name";
+		this.manufacturer="manufacturer";
+		this.year="year";
+		this.name="name";
 		}
 
 
