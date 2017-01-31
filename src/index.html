@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aloha Electronics</title>
+	<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/stylesheet.css"> 
+	<link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<style type="text/css" media="Screen">
+	</style>
+
+</head>
+<script>
+
+        function outputToDiv(text){
+            var outputDiv = document.getElementById("output");
+            var newTextNode = document.createTextNode(text);
+            var newElementNode = document.createElement("br");
+            outputDiv.appendChild(newTextNode);
+            outputDiv.appendChild(newElementNode);
+        }
+
+        function processResults(theData){
+            //outputToDiv(theData);
+            //var output = "", i = 0 ;
+            //var theJSON = JSON.parse(theData);
+            var jsonData = JSON.parse(theData);
+            console.log(jsonData);
+
+            var products = jsonData.products;
+            var output = "";
+            for (var i=0; i <products.length; i++){
+                output+= "<img src='"+ products[i].image + "' height='150 width='150'/><br>";
+                output += "<p>" + products[i].name+ "</p>";
+                output += "<br>";
+
+            document.getElementById("output").innerHTML = output;   
+                            }
+            //for (i = 0 ; i < theJSON.length ; i++){
+                //output += "<a href='" + theJSON[i].url + "'>";
+                //output += theJSON[i].display;
+                //output += "</a><br>";
+            //}
+            //document.getElementById("output").innerHTML = output;
+        }
+
+        function onResults(e){
+            console.log(e); // e is the event object
+            if( e.target.readyState==4 && e.target.status==200 ){
+                console.log("ready");
+                processResults(e.target.responseText);
+            }
+        }
+
+        function init(e){
+            var serviceChannel = new XMLHttpRequest();
+            var url = "bbProducts.json";
+            serviceChannel.addEventListener("readystatechange",onResults,false);
+            //var url = "someLinks.txt";
+            var apiKey = "8ccddf4rtjz5k5btqam84qak";
+            var url = "https://api.bestbuy.com/v1/products((categoryPath.id=abcat0502000))?apiKey=" + apiKey + "&format=json";
+            serviceChannel.open("GET",url,true);
+            serviceChannel.send();
+        }
+
+        window.addEventListener("load",init,false);
+    </script>
+
+<body>
+	<header class="header container">
+ <div class="logo">
+<!-- for screen reader purposes, set to display: none in CSS -->
+        <h1 class="screen-reader">Aloha</h1>
+        <img src="assets/images/aloha-logo.svg" alt="The logo for Aloha Apparel Co." />
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#featured">Featured</a>
+        <a href="#updates">Updates</a>
+      </nav>
+
+      <div class="cart">
+<!-- for screen reader purposes, set to display: none in CSS -->
+        <h1 class="screen-reader">Shopping Cart</h1>
+        <img src="assets/images/cart-icon.svg" alt="A shopping cart icon button" />
+      </div>
+
+    </header>
+
+    <!-- Banner Elements -->
+    <section class="banner">
+      <div class="banner-text container">
+        <p class="collection">New Collection</p>
+        <p class="seasons">Spring/Summer 2016</p>
+      </div>
+    </section>
+
+    <!-- About Elements -->
+    <section class="about">
+      <a id="about"></a>
+      <div class="about-text container">
+
+        <h2 class="heading-italics">Hand-Crafted <span class="heading-bold">Styles</span></h2>
+        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below</p>
+
+      </div>
+    </section>
+
+    <!-- Category Elements -->
+    <section class="category">
+      <a id="shop"></a>
+      <div class="category-rectangle mens">
+        <span class="category-label-rect"><a href="#">Men's</a></span>
+      </div>
+
+      <div class="category-square trends">
+        <span class="category-label-square"><a href="#">Trends</a></span>
+      </div>
+
+      <div class="category-square glasses">
+        <span class="category-label-square"><a href="#">Glasses</a></span>
+      </div>
+
+      <div class="category-square sale">
+        <span class="category-label-square"><a href="#">Sale</a></span>
+      </div>
+
+      <div class="category-square bags">
+        <span class="category-label-square"><a href="#">Bags</a></span>
+      </div>
+
+      <div class="category-rectangle womens">
+        <span class="category-label-rect"><a href="#">Women's</a></span>
+      </div>
+
+
+    </section>
+    <!-- Product Elements -->
+    <section class="products">
+      <a id="featured"></a>
+      <h2 class="heading-italics">Most-Loved <span class="heading-bold">Products</span></h2>
+      <ul class="bxslider products-list">
+        <li>
+          <img src="assets/images/stretch-knit-dress.jpg" alt="A short, black dress with white polka dots"/>
+          <p class="product-category">Dresses</p>
+          <p class="product-name">Stretch Knit Dress</p>
+          <p class="product-price">$169.00</p>
+        </li>
+
+        <li>
+          <img src="assets/images/cotton-blue-shirt.jpg" alt="A short-sleeved blue denim shirt"/>
+          <p class="product-category">Shirts</p>
+          <p class="product-name">Cotton Blue Shirt</p>
+          <p class="product-price">$89.00</p>
+        </li>
+
+        <li>
+          <img src="assets/images/checked-stretch-dress.jpg" alt="A short, red dress with white polka dots"/>
+          <p class="product-category">Dresses</p>
+          <p class="product-name">Stretch Checked Dress</p>
+          <p class="product-price">$129.00</p>
+        </li>
+
+        <li>
+          <img src="assets/images/blue-hipster-backpack.jpg" alt="A dark blue-green backpack with dark red straps"/>
+          <p class="product-category">Bags</p>
+          <p class="product-name">Blue Hipster Backpack</p>
+          <p class="product-price">$69.00</p>
+        </li>
+
+        <li>
+          <img src="assets/images/demin-overall-shorts.jpg" alt="A blue denim overall short"/>
+          <p class="product-category">Denim</p>
+          <p class="product-name">Denim Overall Shorts</p>
+          <p class="product-price">$89.00</p>
+        </li>
+
+        <li>
+          <img src="assets/images/pink-dotted-dress.jpg" alt="A short, dark pink dress with black spots"/>
+          <p class="product-category">Dresses</p>
+          <p class="product-name">Pink Dotted Dress</p>
+          <p class="product-price">$99.00</p>
+        </li>
+
+        <li>
+          <img src="assets/images/blue-silk-dress.jpg" alt="A medium length blue silk dress with a thin black belt"/>
+          <p class="product-category">Dresses</p>
+          <p class="product-name">Blue Silk Dress</p>
+          <p class="product-price">$119.00</p>
+        </li>
+
+        <li>
+          <img src="assets/images/cotton-yellow-tshirt.jpg" alt="A medium length blue silk dress with a thin black belt"/>
+          <p class="product-category">Shirts</p>
+          <p class="product-name">Yellow T-shirt</p>
+          <p class="product-price">$39.00</p>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- Subscription Elements -->
+    <section class="sign-up">
+      <a id="updates"></a>
+      <div class="sign-up-text container">
+        <h2 class="heading-italics">Sign-up for <span class="heading-bold">Updates</span></h2>
+        <p>Stay upated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+        <form class="sign-up-form">
+          <input type="email" name="name" placeholder="Your Email">
+          <input type="submit" name="name" value="Subscribe">
+        </form>
+      </div>
+
+    </section>
+
+    <!-- Footer Elements -->
+    <footer class="footer">
+      <div class="aloha-info">
+        <div class="copyright">
+          <p>&copy; 2016 Aloha Apparel Co.</p>
+          <p>Powered by HTML and CSS.</p>
+        </div>
+
+        <div class="phone-email">
+          <p>(604) 604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+        </div>
+
+        <div class="address">
+          <p>1490 W Broadway</p>
+          <p>Vancouver, BC, Canada</p>
+        </div>
+
+      </div>
+
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+              <span>Facebook</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest"></i>
+              <span>Pinterest</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-google-plus"></i>
+              <span>Google +</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </footer>
+    
+		 <script src="jquery/jquery-1.8.1.js"></script>
+		<!-- bxSlider Javascript file -->
+		<!-- <script src="jquery/jquery.bxslider.js"></script> -->
+    <script src="jquery/jquery.bxslider.min.js"></script>
+  
+		<!-- bxSlider CSS file -->
+		<link href="js/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+<script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
+  </body>
+</html>	
+
+</body>
+</html>
