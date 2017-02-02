@@ -1,64 +1,6 @@
 {Margin:0; Border: 0;}
       
-@font-face {
-    font-family: 'Playfair_Display';
-    src: url('../fonts/PlayFairDisplay-Bold.otf');
-    font-weight: bold;
-    font-style: normal;
-}
-
-  @font-face {
-      font-family: 'Playfair_Display';
-      src: url('../fonts/PlayfairDisplay-BoldItalic.otf');
-      font-weight: bold;
-      font-style: italic;
-}
-
-@font-face {
-    font-family: 'Playfair_Display';
-    src: url('../fonts/PlayfairDisplay-Italic.otf');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Playfair_Display';
-    src: url('../fonts/PlayfairDisplay-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Lightitalic.ttf');
-    font-weight: normal;
-    font-style: italic;
-}
-
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Medium.ttf');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-MediumItalic.ttf');
-    font-weight: bold;
-    font-style: italic;
-}    
-    
-   
+       
 @font-face:{
     font-family:'Roboto'; 
     src: url('../fonts/Roboto/Roboto-BlackItalic.ttf');
@@ -141,7 +83,7 @@ html {
 }
 
 h2 {
-  font: 1.96875rem 'Playfair_Display', sans-serif;
+  font: 1.96875rem 'Roboto', sans-serif;
   font-style: italic;
   
 }
@@ -191,8 +133,7 @@ img {
 
 .banner {
   background:
-        linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
-        url('assets/images/banner.jpg') repeat-x center top;
+        url('images/banner.jpg') repeat-x center top;
   background-size: cover, 10rem 26rem, cover;
   height: 28.5rem;
   display: flex;
@@ -332,32 +273,32 @@ img {
 
 .laptops {
   text-align: center;
-  background: url('laptop-category.jpg');
+  background: url('images/laptop-category.jpg');
   /* background-size: contain; */
 }
 
 .tv {
   text-align: center;
   vertical-align: middle;
-  background: url('tv-category.jpg');
+  background: url('images/tv-category.jpg');
 }
 
 .audio {
   text-align: center;
   vertical-align: middle;
-  background: url('home-audio-category.jpg'); 
+  background: url('images/home-audio-category.jpg'); 
 }
 
 .tablets {
-  background: url('tablet-category.jpg'); 
+  background: url('images/tablet-category.jpg'); 
 }
 
 .desktops {
-  background: url('desktop-category.jpg');
+  background: url('images/desktop-category.jpg');
 }
 
 .cellphones {
-  background: url('cell-category.jpg');
+  background: url('images/cell-category.jpg');
 }
 
 .bx-viewport {
@@ -402,8 +343,7 @@ img {
 
 .sign-up {
   background:
-  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-  url('assets/images/dev_board.png') no-repeat center bottom;
+  url('images/dev_board.png') no-repeat center bottom;
   color: #FFF;
   text-shadow: 1.75px 1.75px 3.5px rgba(100, 100, 100, 0.8);
   text-align: center;
