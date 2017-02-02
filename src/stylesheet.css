@@ -322,7 +322,7 @@ img {
   font-family: 2.1875rem 'Playfair_Display', sans-serif;
 }
 
-.bags, .glasses, .sale, .trends, .womens, .mens {
+.laptops, .tv, .audio, .tablets, .desktops, .cellphones {
   background:
       linear-gradient( to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
       url: no-repeat center center;
@@ -330,34 +330,34 @@ img {
       text-align: center;
 }
 
-.mens {
+.laptops {
   text-align: center;
-  background: url('mens-category.jpg');
+  background: url('laptop-category.jpg');
   /* background-size: contain; */
 }
 
-.trends {
+.tv {
   text-align: center;
   vertical-align: middle;
-  background: url('trends-category.jpg');
+  background: url('tv-category.jpg');
 }
 
-.glasses {
+.audio {
   text-align: center;
   vertical-align: middle;
-  background: url('glasses-category.jpg'); 
+  background: url('home-audio-category.jpg'); 
 }
 
-.sale {
-  background: url('sale-category.jpg'); 
+.tablets {
+  background: url('tablet-category.jpg'); 
 }
 
-.bags {
-  background: url('bags-category.jpg');
+.desktops {
+  background: url('desktop-category.jpg');
 }
 
-.womens {
-  background: url('womens-category.jpg');
+.cellphones {
+  background: url('cell-category.jpg');
 }
 
 .bx-viewport {
