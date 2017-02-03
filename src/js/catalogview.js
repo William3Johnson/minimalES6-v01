@@ -12,27 +12,11 @@ export default class CatalogView{
 
     }
 
-    initCarousel(){
-        initCarousel(){
-       console.log("initializing carousel");
-      $(document).ready(function(){
-          $('.owl-carousel').owlCarousel({
-              items:1,
-              loop:true,
-              responsive : {
-                  0:{
-                      items:1
-                  }, //from zero to 600 screen
-                  601:{
-                      items:2
-                  }, //from 600 to 1050 screen
-                  1050:{
-                      items:4
-                  } //from 1050 to 1240 screen
-              }
 
-          });
-      });
+    initCarousel(){
+     console.log("initializing carousel");
+
+
 
         this.carousel = document.getElementsByClassName("container");
 
@@ -119,7 +103,7 @@ export default class CatalogView{
             addToCartButton.setAttribute("data-sku", product.sku);
             addToCartButton.setAttribute("type", "button",);
             let addCartTextNode = document.createTextNode("Add To Cart");
-            addToCartButton.appendChild(addCartTextNode;
+            addToCartButton.appendChild(addCartTextNode);
             addToCartButton.addEventListener("click", this.onClickCartButton(this.theApp),false);
 
             newDiv.appendChild(newImg);
@@ -137,6 +121,9 @@ export default class CatalogView{
                 <button id="qv_${product.sku}" data-sku" type="button">Quick View</button>
                 <button id = "cart_${product.sku}" data-sku="" type ="button">Add To Cart</button>
                 </div>
+        
+            */
+            }
 
     }
 

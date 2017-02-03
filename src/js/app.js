@@ -11,11 +11,15 @@ export default class App {
     constructor(){
         this.productData = null; // this will store all our data
         this.products = null; // stores specifically the products
+        this.initBestBuyWebService();
         this.catalogView = new CatalogView(); // this will display our data
         this.shoppingCart = new ShoppingCart();
         // call the initBestBuyWebService to initialize the
         // BestBuy Web Service and return the data
-        this.initBestBuyWebService();
+
+ 
+
+        
     }
 
     initBestBuyWebService(){

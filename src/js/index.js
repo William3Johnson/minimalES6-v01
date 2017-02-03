@@ -5,29 +5,44 @@
 // its like a launch pad, where you bring all your other classes
 // together for use.
 
-//import Car from './Car';
-//
-//let edward = new Person("Edward");
-//let eds_car = new Car("ford");
 
-//edward.car = eds_car;
-//edward.car.drive(edward);
+/* all the code that could be written here has
+been encapsulated (moved) into an 'App' class. the 'App' class
+is the application (i.e. your web site, the shopping cart project)
+itself. This is done for organization and cleanliness in code.
+So now you only see two lines here in index.js
+ */
 
-//let cessna = new Plane ("Cessna", "Boeing", 1972);
-//cessna.fly(thePlane);
 
-//let thePlane = newPlane;
-//newPlane.fly(thePlane);
+import App from './App';
 
-//new plane = cessna,Boeing, 1972
+jQuery(document).ready(
+	function(e){
+          $('.owl-carousel').owlCarousel({
+              items:1,
+              loop:true,
+              responsive : {
+                  0:{
+                      items:1
+                  }, //from zero to 600 screen
+                  601:{
+                      items:2
+                  }, //from 600 to 1050 screen
+                  1050:{
+                      items:4
+                  } //from 1050 to 1240 screen
+              }
 
-import BestBuyWebService from './BestBuyWebService';
+          });
 
-let bbws = new BestBuyWebService();
-bbws.apiKey ="8ccddf4rtjz5k5btqam84qak";
-bbws.url = "http://api.bestbuy.com/v1/products((categoryPath.id=abcat0502000))?apiKey=" 
-+ bbws.apiKey + "&format=json";
+		let app = new App();
+	}
+	);
 
-bbws.getData();
+
+
+
+
+
 
 

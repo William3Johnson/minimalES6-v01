@@ -13,6 +13,8 @@ export default class BestBuyWebService{
 
 
     getData(theApp){
+        console.log(theApp);
+
         // theApp is a reference to the main app
         // we can pass information to it, including data
         // that is returned from this service
@@ -51,6 +53,7 @@ export default class BestBuyWebService{
             // assign this instance's productData to be the responseText
             this.productData = evt.target.responseText;
             // assign the app's productData to be the responseText too
+            console.log(theApp);
             theApp.productData = evt.target.responseText;
             // tell the app to prepare the catalog
             // there is another way to do it, with custom
