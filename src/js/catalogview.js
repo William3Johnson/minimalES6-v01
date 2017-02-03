@@ -9,6 +9,7 @@ export default class CatalogView{
     constructor(){
         this.initCarousel();
         this.theApp = null;
+        this.carousel = document.getElementsByClassName("owl-carousel");
 
     }
 
@@ -19,6 +20,7 @@ export default class CatalogView{
           $('.owl-carousel').owlCarousel({
               items:1,
               loop:true,
+              nav:true,
               responsive : {
                   0:{
                       items:1
@@ -36,7 +38,7 @@ export default class CatalogView{
 
 
 
-        this.carousel = document.getElementsByClassName("container");
+        
 
     }
 
@@ -141,7 +143,8 @@ export default class CatalogView{
                 </div>
         
             */
-            document.getElementById('carousel').appendChild(newDiv);
+            // document.getElementById('carousel').appendChild(newDiv);
+            this.carousel[0].appendChild(newDiv);
             }
             this.initCarousel();
 
