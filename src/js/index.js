@@ -16,7 +16,9 @@ So now you only see two lines here in index.js
 
 import App from './App';
 
-jQuery(document).ready(
+let app = new App();
+
+/* $(document).ready(
 	function(e){
           $('.owl-carousel').owlCarousel({
               items:1,
@@ -35,11 +37,12 @@ jQuery(document).ready(
 
           });
 
-		let app = new App();
+		
 	}
+
 	);
 
-
+*/
 
 
 

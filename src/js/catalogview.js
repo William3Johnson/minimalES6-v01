@@ -123,7 +123,9 @@ export default class CatalogView{
                 </div>
         
             */
+            document.getElementById('c').appendChild(newDiv);
             }
+
 
     }
 
