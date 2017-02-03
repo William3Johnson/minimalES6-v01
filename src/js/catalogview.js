@@ -13,17 +13,26 @@ export default class CatalogView{
     }
 
     initCarousel(){
-        /*
-        You should initialize the flickicity carousel here.
-        Right now this code just adds the div tags you would need to add
-        inside the carousel 'container'.
-        Note that this.carousel refers to the div by its class attribute.
-        Since more than one tag can belong to the same class,
-        you either have to give the carousel tag an id as well...or
-        refer to the carousel div tag as this.carousel[0] using bracket
-        notation (since classes mean their *could* be more than one tag
-        belonging to that class) - see line 88 below.
-         */
+        initCarousel(){
+       console.log("initializing carousel");
+      $(document).ready(function(){
+          $('.owl-carousel').owlCarousel({
+              items:1,
+              loop:true,
+              responsive : {
+                  0:{
+                      items:1
+                  }, //from zero to 600 screen
+                  601:{
+                      items:2
+                  }, //from 600 to 1050 screen
+                  1050:{
+                      items:4
+                  } //from 1050 to 1240 screen
+              }
+
+          });
+      });
 
         this.carousel = document.getElementsByClassName("container");
 

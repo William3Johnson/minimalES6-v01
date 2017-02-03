@@ -6,7 +6,7 @@
 	<title>Aloha Electronics</title>
 	<link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/stylesheet.css"> 
-	<link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css"
 	<style>
    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
@@ -25,7 +25,7 @@
         <img src="images/aloha-logo.svg" alt="The logo for Aloha Electronics." />
       </div>
 
-      <nav class="nav-menu">
+      <nav class="nav-menu" style="order:2">
         <a href="#about">About</a>
         <a href="#shop">Shop</a>
         <a href="#featured">Featured</a>
@@ -44,7 +44,7 @@
     <section class="banner">
       <div class="banner-text container">
         <p class="call-to-action">WANT TO BUY</p>
-        <p class="sales-pitch">COOL STUFF FROM BEST BUY</p>
+        <p class="sales-pitch">COOL STUFF FROM BEST BUY?</p>
       </div>
     </section>
 
@@ -53,8 +53,10 @@
       <a id="about"></a>
       <div class="about-text container">
 
-        <h2 class="heading-italics">Hand-Crafted <span class="heading-bold">Styles</span></h2>
-        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below</p>
+        <h2 class="<span class="heading-bold">Have you ever wanted to buy something?</span></h2>
+        <h6 class="heading-info"><p>Aloha Electronics xxx xxxxx xxxxx xxxxx</p>
+        <p>Aloha Electronics xxx xxxxx xxxxx xxxxx</p><p>xxx xxxxx xxx</p>
+
 
       </div>
     </section>
@@ -90,8 +92,7 @@
     </section>
     <!-- Product Elements -->
     <section class="products">
-      <a id="featured"></a>
-      <h2 class="heading-italics">YOU LIKE STUFF?<span class="heading-bold">Products</span></h2
+      <h2 class="stuff">YOU LIKE STUFF?<span class="heading-bold"></span></h2
       >
       <p>WE GOT STUFF</p>
       <ul class="bxslider products-list">
@@ -178,13 +179,13 @@
 
     </footer>
     
-		<script src="jquery/jquery-1.8.1.js"></script>
+		<script src="owl-carousel/owl.carousel.min.js"></script>
 		<!-- bxSlider Javascript file -->
 		<!-- <script src="jquery/jquery.bxslider.js"></script> -->
-    <script src="jquery/jquery.bxslider.min.js"></script>
+    <script src="owl-carousel/owl.theme.default.min.css"></script>
   
 		<!-- bxSlider CSS file -->
-		<link href="js/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+		<link href="owl-carousel/owl.carousel.css" rel="stylesheet"/>
 <script>
 $(document).ready(function(){
   $('.bxslider').bxSlider();
