@@ -1,22 +1,18 @@
-var rename = require("gulp-rename");
 var gulp = require("gulp");
 var uglifycss = require("gulp-uglifycss");
-var concat = require("gulp-concat");
+var sass = require("gulp-concat");
  
-gulp.task("alohaE",function (){
+gulp.task('scss', function (){
 	// what files do i want to look for
-	gulp.src("/css/*.css")
-
-	// rename the css file(s) i found
-	.pipe(concat("all.css"))
-	.pipe(rename("project.css"))
-	// take the ive just renamed and minify them
+	gulp.src("src/scss/app.scss")
+	.pipe(sass())
 	.pipe(uglifycss({
       "maxLineLen": 80,
       "uglyComments": true
+    .pipe(gulp.dest('.dist/css')) 
     }))
 	// where should i put the renamed file(s)
-	.pipe(gulp.dest("./dist/"));
+	.pipe(gulp.dest('./dist/'));
 
 
 	
@@ -24,11 +20,8 @@ gulp.task("alohaE",function (){
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('src/css/*.css', ['aloha']);
+    gulp.watch('src/scss/*.scss', ['scss']);
 });
 
 	// Default Task
 
-gulp.task("alohaE", function () {
-		// body...
-})
