@@ -111,7 +111,8 @@ created for your project as described in step 01 **.
 
 3. Review the settings for the **package.json** file being created.
 
-4. For **Is This Ok**, if the settings look good, click yes
+4. For **Is This Ok**, if the settings look good, click yes. An _example_ of what the chosen settings look like is shown below (the values will be of course the values you have entered and not necessarily the ones in this diagram)
+![running npm init](http://www.edapostol.com/gitHubReadMeImg/ra/project02/03_resultsOfBuildingPackage.json.png)
 
 5. Make sure webpack and gulp are globally installed, making it available to transpile at your terminal.
 
