@@ -455,11 +455,11 @@ input[type="submit"] {
   background-color: #48b430;
   color: #FFF;
   font-weight: bold;
-  padding: 0.65rem 1.5rem;
+  padding: 0.85rem 1.5rem;
   position: absolute;
   border-radius: 1px;
-  right: 0.25rem;
-  top: 0.25rem;
+  right: 0.025rem;
+  top: 0.025rem;
   cursor: pointer;
 }
 
@@ -619,6 +619,8 @@ input[type="submit"]:focus {
 
   .nav-menu a {
     padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 
 

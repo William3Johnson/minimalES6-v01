@@ -7,7 +7,7 @@
 export default class CatalogView{
 
     constructor(){
-        this.initCarousel();
+        // this.initCarousel();
         this.theApp = null;
         this.carousel = document.getElementsByClassName("owl-carousel");
 
@@ -90,7 +90,7 @@ export default class CatalogView{
             // create a new Paragraph to show a description
             let newPara = document.createElement("p");
             newPara.setAttribute("class","product-type");
-            let newParaTextNode = document.createTextNode(product.longDescription);
+            let newParaTextNode = document.createTextNode(product.manufacturer);
             newPara.appendChild(newParaTextNode);
 
             // create a new H3 tag to show the name
@@ -108,9 +108,10 @@ export default class CatalogView{
             remember that each button you create should have
             a data-sku attribute that corresponds to the sku
             of each product.
-            */
+            */let hr = document.createElement("hr");
             
             let quickViewButton = document.createElement("button");
+            quickViewButton.setAttribute("class", "quickViewButton");
             quickViewButton.setAttribute("id", `qv${product.sku}`);
             quickViewButton.setAttribute("data-sku", product.sku);
             quickViewButton.setAttribute("type", "button");
@@ -119,6 +120,7 @@ export default class CatalogView{
             
         
             let addToCartButton = document.createElement ("button");
+            addToCartButton.setAttribute("class", "addToCartButton");
             addToCartButton.setAttribute("id", `cart_${product.sku}`);
             addToCartButton.setAttribute("data-sku", product.sku);
             addToCartButton.setAttribute("type", "button",);
@@ -128,6 +130,7 @@ export default class CatalogView{
 
             newDiv.appendChild(newImg);
             newDiv.appendChild(newPara);
+            newDiv.appendChild(hr);
             newDiv.appendChild(newH3Tag);
             newDiv.appendChild(newPricePara);
             newDiv.appendChild(quickViewButton); // added new quickView Button
