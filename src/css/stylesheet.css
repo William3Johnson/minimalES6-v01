@@ -1,137 +1,80 @@
 {Margin:0; Border: 0;}
       
-@font-face {
-    font-family: 'Playfair_Display';
-    src: url('../fonts/PlayFairDisplay-Bold.otf');
-    font-weight: bold;
-    font-style: normal;
-}
 
-  @font-face {
-      font-family: 'Playfair_Display';
-      src: url('../fonts/PlayfairDisplay-BoldItalic.otf');
-      font-weight: bold;
-      font-style: italic;
-}
-
-@font-face {
-    font-family: 'Playfair_Display';
-    src: url('../fonts/PlayfairDisplay-Italic.otf');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Playfair_Display';
-    src: url('../fonts/PlayfairDisplay-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Lightitalic.ttf');
-    font-weight: normal;
-    font-style: italic;
-}
-
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Medium.ttf');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-MediumItalic.ttf');
-    font-weight: bold;
-    font-style: italic;
-}    
-    
    
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-BlackItalic.ttf');
+    src: url('fonts/Roboto/Roboto-BlackItalic.ttf');
     font-weight: normal;
     font-style: italic;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+    src: url('fonts/Roboto/Roboto-Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-BoldItalic.ttf');
+    src: url('fonts/Roboto/Roboto-BoldItalic.ttf');
     font-weight: bold;
     font-style: bold;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-Italic.ttf');
+    src: url('fonts/Roboto/Roboto-Italic.ttf');
     font-weight: normal;
     font-style: italic;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-Light.ttf');
+    src: url('fonts/Roboto/Roboto-Light.ttf');
     font-weight: lighter;
     font-style: normal;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-LightItalic.ttff');
+    src: url('fonts/Roboto/Roboto-LightItalic.ttff');
     font-weight: lighter;
     font-style: italic;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-Medium.ttf');
+    src: url('fonts/Roboto/Roboto-Medium.ttf');
     font-weight: medium;
     font-style: normal;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-MediumItalic.ttf');
+    src: url('fonts/Roboto/Roboto-MediumItalic.ttf');
     font-weight: medium;
     font-style: italic;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-Thin.ttf');
+    src: url('fonts/Roboto/Roboto-Thin.ttf');
     font-weight: lighter;
     font-style: normal;
 }        
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('../fonts/Roboto/Roboto-ThinItalic.ttf');
+    src: url('fonts/Roboto/Roboto-ThinItalic.ttf');
     font-weight: lighter;
     font-style: italic;
 }    
@@ -185,6 +128,20 @@ img {
 
 }
 
+.addToCartButton {
+  background-color: #4CAF50;
+  border: 0px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: blink;
+  display: inline-block;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin: 35px 0px;
+  cursor: pointer;
+}
+
 .address {
   line-height: 1.5rem;
   color: #969696;
@@ -208,10 +165,31 @@ img {
   color: #FFF;
   font-family: 'Roboto-Bold';
   font-size: 5rem;
-  text-align: center;
   text-shadow: 1.575px 1.575px 3.15px rgba(90, 90, 90, 0.75);
   /* width: 70%; */
 }  
+
+.button {
+  background-color: none;
+  border: 5px;
+  color: #4CAF50; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto-Light'
+  font-size: 1px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.call-to-action {
+    padding-left: 25rem;
+    font-family: 'Roboto-Thin';
+    font-size: 1.5rem;
+
+
+}
 
 .cart {
   align-self: flex-end;
@@ -321,6 +299,13 @@ img {
   color: #b64036;
 }
 
+.sales-pitch {
+
+  font-family: 'Roboto-Regular';
+  font-size: 2.5rem;
+  text-align: center;
+}
+
 /*Cascades Section II (Sliders & Product Roll)*/
 
 .seasons {
@@ -377,6 +362,7 @@ img {
 .products {
   text-align: center;
   padding-bottom: 1rem;
+  color:  #993300;
 }
 
 .products h2 {
@@ -621,6 +607,8 @@ input[type="submit"]:focus {
     padding: 0 2rem;
     text-decoration: none;
     text-transform: uppercase;
+    color:  #993300;
+    font-size: 1.5rem;
   }
 
 

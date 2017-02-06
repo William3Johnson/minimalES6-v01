@@ -22,7 +22,7 @@ export default class CatalogView{
               loop:true,
               nav:true,
               responsive : {
-                  0:{
+                 0:{
                       items:1
                   }, //from zero to 600 screen
                   601:{
