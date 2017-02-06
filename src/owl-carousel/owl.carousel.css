@@ -33,6 +33,7 @@
   .owl-carousel .owl-item {
     position: relative;
     min-height: 1px;
+    padding: 2px;
     float: left;
     -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;

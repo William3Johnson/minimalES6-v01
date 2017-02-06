@@ -94,6 +94,15 @@ h2 span {
   font-style: normal;
 }
 
+h3 {
+
+  font: normal;
+  color: #808080;
+}
+
+
+}
+
 /* for responsive scaling of images */
 img {
   height: auto;
@@ -169,11 +178,12 @@ img {
   /* width: 70%; */
 }  
 
-.button {
-  background-color: white;
+.clickhere {
+  background-color: none;
   border: solid #4CAF50;
   border-width: 2px;
   border-spacing: 3px;
+  padding-left: 25rem;
   padding: 12px 16px;
   text-align: center;
   text-decoration: blink;
@@ -182,6 +192,7 @@ img {
   text-transform: uppercase;
   margin: 35px 0px;
   cursor: pointer;
+  height: 2rem;
 
 }
 
@@ -278,6 +289,15 @@ img {
   flex-wrap: wrap;
 }
 
+.header-conatainer{
+  padding: 1 2 1 2rem;
+  max-width: 1350px;
+}
+
+.hr {
+  padding: 2px;
+}
+
 .logo {
   /* align-self: flex-start; */
   order: 1;
@@ -320,7 +340,7 @@ img {
   font-family: 2.1875rem 'Playfair_Display', sans-serif;
 }
 
-.laptops, .tv, .audio, .tablets, .desktops, .cellphones {
+.Electronics, .tv, .audio, .tablets, .desktops, .cellphones {
   background:
       linear-gradient( to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
       url: no-repeat center center;
@@ -328,33 +348,33 @@ img {
       text-align: center;
 }
 
-.category-rectangle-electronics {
+.Electronics {
   text-align: center;
-  background: url('images/laptop-category.jpg');
+  background: url('assets/images/laptop-category.jpg');
   /* background-size: contain; */
 }
 
-.category-rectangle-tv {
+.tv {
   text-align: center;
   vertical-align: middle;
   background: url('images/tv-category.jpg');
 }
 
-.category-rectangle-audio {
+.audio {
   text-align: center;
   vertical-align: middle;
   background: url('images/home-audio-category.jpg'); 
 }
 
-.category-rectangle-tablets {
+.tablets {
   background: url('images/tablet-category.jpg'); 
 }
 
-.category-rectangle-desktops {
+.desktops {
   background: url('images/desktop-category.jpg');
 }
 
-.category-rectangle-cellphones {
+.cellphones {
   background: url('images/cell-category.jpg');
 }
 
@@ -396,6 +416,17 @@ img {
 .product-price {
   font: bold #969696;
   padding-bottom: 3rem;
+}
+
+
+.price {
+  font: normal;
+  color: #808080;
+}
+
+.product-type {
+  font-style: normal;
+  color: #808080;
 }
 
 .quickViewButton {
@@ -628,7 +659,7 @@ input[type="submit"]:focus {
 
 
   .container {
-    max-width: 1400px;
+    max-width: 1350px;
   }
 
 

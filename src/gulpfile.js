@@ -3,7 +3,7 @@ var gulp = require("gulp");
 var uglifycss = require("gulp-uglifycss");
 var concat = require("gulp-concat");
  
-gulp.task("alohaE",function (){
+gulp.task("alohae",function (){
 	// what files do i want to look for
 	gulp.src("src/css/*.css")
 
@@ -24,11 +24,7 @@ gulp.task("alohaE",function (){
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('src/css/*.css', ['aloha']);
+    gulp.watch('src/css/*.css', ['alohaE']);
 });
 
 	// Default Task
-
-gulp.task("alohaE", function () {
-		// body...
-})
