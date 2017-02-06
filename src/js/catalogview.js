@@ -45,8 +45,8 @@ export default class CatalogView{
     onClickCartButton(theApp){
 
         return function(e){
-            console.log(e.target.getAttribute["data-sku"]); //getAttribute.data-sku
-            let theSku = e.target.getAttribute("data-sku");
+            console.log(e.target.getAttribute.dataSku);
+            let theSku = e.target.getAttribute.dataSku;
             console.log(theApp);
             console.log(theApp.shoppingCart);
             theApp.shoppingCart.addItemToCart(theSku);
