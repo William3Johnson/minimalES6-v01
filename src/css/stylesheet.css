@@ -1,7 +1,6 @@
 {Margin:0; Border: 0;}
       
 
-   
 @font-face {
     font-family:'Roboto'; 
     src: url('fonts/Roboto/Roboto-BlackItalic.ttf');
@@ -132,11 +131,12 @@ img {
   background-color: #4CAF50;
   border: 0px;
   color: white;
-  padding: 10px 10px;
+  padding: 14px 14px;
   text-align: center;
   text-decoration: blink;
   display: inline-block;
   font-size: 9px;
+  font: bold;
   text-transform: uppercase;
   margin: 35px 0px;
   cursor: pointer;
@@ -170,15 +170,17 @@ img {
 }  
 
 .button {
-  background-color: none;
-  border: 5px;
-  color: #4CAF50; 
-  padding: 15px 32px;
+  background-color: white;
+  border: solid #4CAF50;
+  border-width: 2px;
+  border-spacing: 3px;
+  padding: 12px 16px;
   text-align: center;
-  text-decoration: none;
-  font-family: 'Roboto-Light'
-  font-size: 1px;
-  margin: 4px 2px;
+  text-decoration: blink;
+  display: inline-block;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin: 35px 0px;
   cursor: pointer;
 
 }
@@ -262,6 +264,12 @@ img {
   line-height: 1.5rem;
 }
 
+.Got-Stuff {
+  padding-bottom: 125px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -320,34 +328,34 @@ img {
       text-align: center;
 }
 
-.laptops {
+.category-rectangle-electronics {
   text-align: center;
-  background: url('laptop-category.jpg');
+  background: url('images/laptop-category.jpg');
   /* background-size: contain; */
 }
 
-.tv {
+.category-rectangle-tv {
   text-align: center;
   vertical-align: middle;
-  background: url('tv-category.jpg');
+  background: url('images/tv-category.jpg');
 }
 
-.audio {
+.category-rectangle-audio {
   text-align: center;
   vertical-align: middle;
-  background: url('home-audio-category.jpg'); 
+  background: url('images/home-audio-category.jpg'); 
 }
 
-.tablets {
-  background: url('tablet-category.jpg'); 
+.category-rectangle-tablets {
+  background: url('images/tablet-category.jpg'); 
 }
 
-.desktops {
-  background: url('desktop-category.jpg');
+.category-rectangle-desktops {
+  background: url('images/desktop-category.jpg');
 }
 
-.cellphones {
-  background: url('cell-category.jpg');
+.category-rectangle-cellphones {
+  background: url('images/cell-category.jpg');
 }
 
 .bx-viewport {
@@ -390,6 +398,21 @@ img {
   padding-bottom: 3rem;
 }
 
+.quickViewButton {
+  background-color: white;
+  border: solid #4CAF50;
+  border-width: 2px;
+  border-spacing: 3px;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: blink;
+  display: inline-block;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin: 35px 0px;
+  cursor: pointer;
+}
+
 
 .sign-up {
   background:
@@ -398,6 +421,7 @@ img {
   color: #FFF;
   text-shadow: 1.75px 1.75px 3.5px rgba(100, 100, 100, 0.8);
   text-align: center;
+  text-transform: uppercase;
   border-bottom: 0.5rem solid #FFF;
   padding: 3rem 0;
 }
@@ -416,6 +440,11 @@ img {
   margin: 1.5rem auto 0;
   position: relative;
   width: 90%;
+}
+
+.stuff {
+  font: 'Roboto-Thin' 1.5rem;
+
 }
 
 input {
@@ -462,7 +491,7 @@ input[type="submit"]:focus {
 .footer {
   font: #FFF 'Playfair_Display', sans-serif;
   text-align: center;
-  background-color: #242424;
+  background: url('images/backlitkeyboard.jpg');
 }
 
 .phone-email {
