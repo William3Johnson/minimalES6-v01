@@ -197,10 +197,15 @@ img {
 }
 
 .call-to-action {
-    padding-left: 25rem;
+    padding-left: 24rem;
     font-family: 'Roboto-Thin';
     font-size: 1.5rem;
 
+
+}
+
+#carousel.owl-carousel.owl-loaded.owl-drag {
+  padding-top: 25rem;
 
 }
 
@@ -294,6 +299,13 @@ img {
   max-width: 1350px;
 }
 
+h2.stuff {
+  font-family: 'Roboto-Thin';
+  font-style: normal;
+  font-size: 2rem;
+  color: black;
+}
+
 .hr {
   padding: 2px;
 }
@@ -348,9 +360,10 @@ img {
       text-align: center;
 }
 
+
 .Electronics {
   text-align: center;
-  background: url('assets/images/laptop-category.jpg');
+  background: url('images/laptop-category.jpg');
   /* background-size: contain; */
 }
 
@@ -390,7 +403,7 @@ img {
 .products {
   text-align: center;
   padding-bottom: 1rem;
-  color:  #993300;
+  color:  #808080;
 }
 
 .products h2 {

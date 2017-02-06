@@ -47,7 +47,9 @@ export default class CatalogView{
         return function(e){
             console.log(e.target.getAttribute["data-sku"]); //getAttribute.data-sku
             let theSku = e.target.getAttribute("data-sku");
-            this.theApp.shoppingCart.addItemToCart(theSku);
+            console.log(theApp);
+            console.log(theApp.shoppingCart);
+            theApp.shoppingCart.addItemToCart(theSku);
        } //create function addItemToCart ()
     }   
 

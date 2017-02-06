@@ -18,6 +18,10 @@ gulp.task('scss', function (){
 	
 });
 
+gulp.task ('default', function(){
+ console.log('hello');
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('src/scss/*.scss', ['scss']);
