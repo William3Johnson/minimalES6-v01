@@ -278,6 +278,7 @@ img {
 .copyright {
   padding: 4rem 0 1.5rem;
   line-height: 1.5rem;
+  font-size: white;
 }
 
 .Got-Stuff {
@@ -494,15 +495,20 @@ h2.stuff {
 input {
   font-family: 1rem 'Raleway', sans-serif;
   line-height: 2;
+  font-size: 11.5px;
+  font-style: bold;
+
 }
 
 
 input[type="email"] {
   padding: 1.025rem .025rem;
   padding-right: 0px;
+  background: url('images/ports.jpg');
   width: 100%;
   border: 0;
   border-radius: 0px;
+  border-collapse: all;
 }
 
 input[type="email"]:focus {
@@ -511,12 +517,14 @@ input[type="email"]:focus {
 }
 
 input[type="submit"] {
-  background-color: #48b430;
+  background-color: black;
   color: #FFF;
   font-weight: bold;
   padding: 0.85rem 1.5rem;
   position: absolute;
   border-radius: 1px;
+  border-style: groove;
+  border-color: #ffffe0;
   right: 0.025rem;
   top: 0.025rem;
   cursor: pointer;
@@ -524,7 +532,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  background-color: #e2574c;
+  background-color: #48b430;
 }
 
 input[type="submit"]:focus {

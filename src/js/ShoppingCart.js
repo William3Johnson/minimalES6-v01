@@ -23,23 +23,21 @@ export default class ShoppingCart{
      addItemToCart (sku){
         let numMatches = 0;
         for(let i = 0; 0<sessionStorage.length; i++){
-            if(sessionStorage[i] == sku){
+            if(sessionStorage.key(i) == sku){
                let newVal = sessionStorage.getItem(sku);
-                    sessionStorage.setItem(sku, parseInt(newVal)+1);
-                    numMatches = 1;
+                sessionStorage.setItem(sku, parseInt(newVal)+1);
+                numMatches = 1;
             }
         }
     
-    if (numMatches == 0){
-        sessionStorage.setItem(sku, 1);
-    } 
-        
-            addItemToCart.sku(sku, 1);
-                console.log('addingItem to Cart');
-        
-    }
+        if (numMatches == 0){
+            sessionStorage.setItem(sku, 1);
+            //addItemToCart(1);
+            console.log('addingItem to Cart');
+        }
 
-    removeItemFromCart(sku){
+    }
+    removeItemFromCart(){
 
     }
 
