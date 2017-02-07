@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6-Based Demo Template</title>
+    <script>
+        class OutputDebugger{
+            constructor(){
+                this.outputDiv = document.getElementById("output");//no need to import--all in the HTML.
+                    //if creating a new object from scratch ALL objects have a constructor device.  
+            }
+
+            outputToDiv(text){ // the action created was put into a new textNode/Element/append..
+                let newTextNode = document.createTextNode(text);
+                let newElementNode = document.createElement("br");
+                this.outputDiv.appendChild(newTextNode);
+                this.outputDiv.appendChild(newElementNode);
+            }
+        }
+
+        let init = (e) =>{ // all functions will generate an (e)--this is writing a function in es6.
+            let outputDebugger = new OutputDebugger();
+            outputDebugger.outputToDiv("hello again!");
+        };
+        // old way..
+        function init(e){
+            var outputDiv = doument.document.getElementById("outputToDiv");
+            var newTextNode = document.document.createTextNode(newTextNode);
+            var newElementNode = document.createElement("br");
+            outputToDiv.append(newTextNode);
+            outputToDiv.appendChild(newElementNode);
+        }
+        window.addEventListener("load",init,false);
+
+
+    </script>
+</head>
+<body>
+<div id="output">
+
+</div>
+</body>
+</html>

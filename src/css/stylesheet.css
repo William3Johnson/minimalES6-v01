@@ -1,0 +1,731 @@
+{Margin:0; Border: 0;}
+      
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-BlackItalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}    
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}    
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: bold;
+}    
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}    
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-Light.ttf');
+    font-weight: lighter;
+    font-style: normal;
+}    
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-LightItalic.ttff');
+    font-weight: lighter;
+    font-style: italic;
+}    
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-Medium.ttf');
+    font-weight: medium;
+    font-style: normal;
+}    
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-MediumItalic.ttf');
+    font-weight: medium;
+    font-style: italic;
+}    
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}    
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-Thin.ttf');
+    font-weight: lighter;
+    font-style: normal;
+}        
+
+@font-face {
+    font-family:'Roboto'; 
+    src: url('fonts/Roboto/Roboto-ThinItalic.ttf');
+    font-weight: lighter;
+    font-style: italic;
+}    
+
+
+html {
+  font-size: 16px;/*16 pixels will render better on tablets and mobile*/
+}
+
+h2 {
+  font: 1.96875rem 'Playfair_Display', sans-serif;
+  font-style: italic;
+  
+}
+
+h2 span {
+  font-weight: bold;
+  font-style: normal;
+}
+
+h3 {
+
+  font: normal;
+  color: #808080;
+}
+
+
+}
+
+/* for responsive scaling of images */
+img {
+  height: auto;
+/* ensures that the element is never larger than its container */
+  max-width: 100%;
+}
+
+/* works with the viewport meta tag*/
+@-ms-viewport {
+  width: device-width;
+}
+
+/*Cascades Section I*/
+
+.about {
+  text-align: center;
+  /*border-bottom: 0.1rem solid #d7d7d7;*/
+  padding: 3.0625rem 0 1.75rem;
+
+}
+
+.about h2 {
+  padding-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.15rem;
+  line-height: 2.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+
+}
+
+.addToCartButton {
+  background-color: #4CAF50;
+  border: 0px;
+  color: white;
+  padding: 14px 14px;
+  text-align: center;
+  text-decoration: blink;
+  display: inline-block;
+  font-size: 9px;
+  font: bold;
+  text-transform: uppercase;
+  margin: 35px 0px;
+  cursor: pointer;
+}
+
+.address {
+  line-height: 1.5rem;
+  color: #969696;
+  padding-bottom: 3rem;
+}  
+
+.banner {
+  background:
+        linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
+        url('assets/images/banner.jpg') repeat-x center top;
+  background-size: cover, 10rem 26rem, cover;
+  height: 28.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  /* align-self: center; */
+  /* text-align: center; */
+  color: #FFF;
+  font-family: 'Roboto-Bold';
+  font-size: 5rem;
+  text-shadow: 1.575px 1.575px 3.15px rgba(90, 90, 90, 0.75);
+  /* width: 70%; */
+}  
+
+.clickhere {
+  background-color: none;
+  border: solid #4CAF50;
+  border-width: 2px;
+  border-spacing: 3px;
+  padding-left: 25rem;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: blink;
+  display: inline-block;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin: 35px 0px;
+  cursor: pointer;
+  height: 2rem;
+
+}
+
+.call-to-action {
+    padding-left: 24rem;
+    font-family: 'Roboto-Thin';
+    font-size: 1.5rem;
+
+
+}
+
+#carousel.owl-carousel.owl-loaded.owl-drag {
+  padding-top: 25rem;
+
+}
+
+.cart {
+  align-self: flex-end;
+  order: 2;
+  width: 50px;
+}
+
+.container {
+  padding: 0 2%;
+  width: 100%;
+}
+
+
+.category {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.category-rectangle:before, .category-square:before {
+  content: " ";
+  float: left;
+}
+
+.category-square::before {
+  padding-top: 100%;
+}
+
+.category-rectangle::before {
+  padding-top: 50%;
+}
+
+.category-rectangle {
+  display: flex;
+  /* flex: 2 0 100%; */
+  max-width: 100%;
+  /* border: 4px solid #FFF; */
+}
+
+.category-square {
+  display: flex;
+  /* flex: 1 0 100%; */
+  /* max-width: 50%; */
+  /* border: 4px solid #FFF; */
+}
+
+.category-label-rect, .category-label-square {
+  font: 1.3125rem bold;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.category-label-rect a, .category-label-square a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.category-label-rect a:hover, .category-label-square a:hover {
+  color: #f5ebc6;
+}
+
+.collection {
+  font: bold 1.09375rem'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+
+.copyright {
+  padding: 4rem 0 1.5rem;
+  line-height: 1.5rem;
+  font-size: white;
+}
+
+.Got-Stuff {
+  padding-bottom: 125px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-conatainer{
+  padding: 1 2 1 2rem;
+  max-width: 1350px;
+}
+
+h2.stuff {
+  font-family: 'Roboto-Thin';
+  font-style: normal;
+  font-size: 2rem;
+  color: black;
+}
+
+.hr {
+  padding: 2px;
+}
+
+.logo {
+  /* align-self: flex-start; */
+  order: 1;
+  width: 120px;
+}
+
+.nav {
+  margin-top: 1rem;
+  border-top: 1px solid #d7d7d7;
+  font-weight: bold;
+  order: 3;
+  padding-top: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #e2574c;
+  padding: 0 0.5rem;
+  align-self: center;
+}
+
+.nav a:hover {
+  color: #b64036;
+}
+
+.sales-pitch {
+
+  font-family: 'Roboto-Regular';
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/*Cascades Section II (Sliders & Product Roll)*/
+
+.seasons {
+  font-family: 2.1875rem 'Playfair_Display', sans-serif;
+}
+
+.Electronics, .tv, .audio, .tablets, .desktops, .cellphones {
+  background:
+      linear-gradient( to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+      url: no-repeat center center;
+      background-size: cover, cover;
+      text-align: center;
+}
+
+
+.Electronics {
+  text-align: center;
+  background: url('images/laptop-category.jpg');
+  /* background-size: contain; */
+}
+
+.tv {
+  text-align: center;
+  vertical-align: middle;
+  background: url('images/tv-category.jpg');
+}
+
+.audio {
+  text-align: center;
+  vertical-align: middle;
+  background: url('images/home-audio-category.jpg'); 
+}
+
+.tablets {
+  background: url('images/tablet-category.jpg'); 
+}
+
+.desktops {
+  background: url('images/desktop-category.jpg');
+}
+
+.cellphones {
+  background: url('images/cell-category.jpg');
+}
+
+.bx-viewport {
+  box-shadow: 0 0 5px #FFF !important;
+}
+
+.bx-clone {
+  display: none;
+}
+
+
+.products {
+  text-align: center;
+  padding-bottom: 1rem;
+  color:  #808080;
+}
+
+.products h2 {
+  padding: 3rem 0 2rem;
+}
+
+.products img {
+  width: 20rem;
+  padding-bottom: 1rem;
+}
+
+.product-category {
+  text-transform: uppercase;
+  font-size: 0.8rem #969696;
+  padding-bottom: 1.25rem;
+}
+
+.product-name {
+  font: 1.3125rem #e2574c'Playfair_Display', sans-serif;
+  padding-bottom: 1.25rem;
+}
+
+.product-price {
+  font: bold #969696;
+  padding-bottom: 3rem;
+}
+
+
+.price {
+  font: normal;
+  color: #808080;
+}
+
+.product-type {
+  font-style: normal;
+  color: #808080;
+}
+
+.quickViewButton {
+  background-color: white;
+  border: solid #4CAF50;
+  border-width: 2px;
+  border-spacing: 3px;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: blink;
+  display: inline-block;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin: 35px 0px;
+  cursor: pointer;
+}
+
+
+.sign-up {
+  background:
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url('assets/images/dev_board.png') no-repeat center bottom;
+  color: #FFF;
+  text-shadow: 1.75px 1.75px 3.5px rgba(100, 100, 100, 0.8);
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 0.5rem solid #FFF;
+  padding: 3rem 0;
+}
+
+.sign-up h2 {
+  font-size: 2.25rem;
+  padding: 2rem 0;
+}
+.sign-up p {
+  font-size: 1.00625rem;
+  line-height: 2.5rem;
+}
+
+.sign-up form {
+  display: block;
+  margin: 1.5rem auto 0;
+  position: relative;
+  width: 90%;
+}
+
+.stuff {
+  font: 'Roboto-Thin' 1.5rem;
+
+}
+
+input {
+  font-family: 1rem 'Raleway', sans-serif;
+  line-height: 2;
+  font-size: 11.5px;
+  font-style: bold;
+
+}
+
+
+input[type="email"] {
+  padding: 1.025rem .025rem;
+  padding-right: 0px;
+  background: url('images/ports.jpg');
+  width: 100%;
+  border: 0;
+  border-radius: 0px;
+  border-collapse: all;
+}
+
+input[type="email"]:focus {
+  outline: 0;
+  box-shadow: 3px 2px 3px  rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: #FFF;
+  font-weight: bold;
+  padding: 0.85rem 1.5rem;
+  position: absolute;
+  border-radius: 1px;
+  border-style: groove;
+  border-color: #ffffe0;
+  right: 0.025rem;
+  top: 0.025rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-color: #48b430;
+}
+
+input[type="submit"]:focus {
+  outline: 0;
+}
+
+
+.footer {
+  font: #FFF 'Playfair_Display', sans-serif;
+  text-align: center;
+  background: url('images/backlitkeyboard.jpg');
+}
+
+.phone-email {
+  padding-bottom: 1.5rem;
+}
+
+.phone-email a {
+  color: white;
+}
+
+.phone-email a:hover {
+  color: #b64036;
+}
+
+
+.social-media {
+  padding-bottom: 4rem;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.social-media a:hover {
+  color: #b64036;
+}
+
+.social-media li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.social-media span {
+  display: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .about-text {
+    max-width: 720px;
+  }
+
+  .aloha-info {
+   text-align: left;
+   padding-left: 1rem;
+  }
+
+  .bx-clone {
+    display: inline-block;
+  }
+
+  .bxslider li{
+    width: 50vw !important;
+  }
+
+
+  .category-rectangle {
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .category-square {
+    flex-basis: 25%;
+  } 
+
+
+  .cart {
+    order: 3;
+  }    
+
+  .container {
+    max-width: 600px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heading-bold{
+    font-family: 'Roboto-Thin';
+    font-size:2.5rem;
+    text-align: center;
+  }
+
+  .nav {
+    order: 1;
+    width: auto;
+    align-self: center;
+  }
+
+  .nav a {
+    padding: 0 0.85rem;
+  }
+
+
+  .trends, .bags, .womens {
+    /* border: 4px solid #FFF; */
+  }
+
+  .seasons {
+    font-size: 2.49375rem;
+  }
+
+  .sign-up form {
+    width: 35%;
+    text-align: center;
+  }
+
+
+  .social-media {
+
+    padding: 4rem 2rem 0 0;
+  }
+
+  .social-media li {
+    display: block;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .social-media span {
+    display: inline;
+    padding-left: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 1240px) {
+
+
+  .container {
+    max-width: 1350px;
+  }
+
+
+  .nav-menu a {
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:  #993300;
+    font-size: 1.5rem;
+  }
+
+
+  .about-text {
+    width: 1400px;
+  }
+
+
+  .banner {
+    background-size: 100% 100%;
+    height: 35rem;
+  }
+
+  .seasons {
+    font-size: 3.4125rem;
+  }
+
+
+  .bxslider li{
+    width: 25vw !important;
+  }
+
+
+  .products-list li {
+    width: 25%;
+  }
+
+
+  .sign-up-text {
+    width: 1400px;
+  }
+
+
+  .social-media {
+    padding-right: 4.5rem;
+  }
+
+
+}

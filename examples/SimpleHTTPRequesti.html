@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Example</title>
+    <script>
+
+        function outputToDiv(text){
+            var outputDiv = document.getElementById("output");
+            var newTextNode = document.createTextNode(text);
+            var newElementNode = document.createElement("br");
+            outputDiv.appendChild(newTextNode);
+            outputDiv.appendChild(newElementNode);
+        }
+
+        function processResults(theData){
+            outputToDiv("I got something");
+            var output = "", i = 0 ; //output is 0, counter is 0.
+            var theJSON = JSON.parse(theData);
+            for (i = 0 ; i < theJSON.length ; i++){// how many objects i have +1
+                output += "<a href='" + theJSON[i].url + "'>";
+                output += theJSON[i].display;//like facebook
+                output += "</a><br>";//<anchor tag> title, break...
+            }
+            document.getElementById("output").innerHTML = output;
+        }
+
+        function onResults(e){
+            console.log(e); // e is the event object ('key up', 'load') always receives.  Don't always use. --XMLHTTP object--
+            if( e.target.readyState==4 && e.target.status==200 ){//who is the target that generated the event. If button generated the event then button is the target. /./ '4' is ready. '400' is not ready.
+                console.log("ready");
+                processResults(e.target.responseText);
+            }
+        }
+
+        function init(e){
+            var serviceChannel = new XMLHttpRequest();//<= this is the event...
+            serviceChannel.addEventListener("readystatechange",onResults,false);
+                // ready state change
+            //var url = "someLinks.txt";//will not work with url--we have a development .server
+            var url = "bbProducts.json";
+            serviceChannel.open("GET",url,true);//open channel to url
+            serviceChannel.send();//send the request
+        }
+
+        window.addEventListener("load",init,false);
+    </script>
+</head>
+<body>
+    <div id="output">
+
+    </div>
+<p>Note: In order for this file to work, we would need to post this file to a hosting provider that has a web server installed.</p>
+</body>
+</html>

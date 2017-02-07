@@ -1,0 +1,613 @@
+{Margin:0; Border: 0;}
+      
+       
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-BlackItalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}    
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}    
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: bold;
+}    
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}    
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+    font-weight: lighter;
+    font-style: normal;
+}    
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-LightItalic.ttff');
+    font-weight: lighter;
+    font-style: italic;
+}    
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-Medium.ttf');
+    font-weight: medium;
+    font-style: normal;
+}    
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-MediumItalic.ttf');
+    font-weight: medium;
+    font-style: italic;
+}    
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}    
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-Thin.ttf');
+    font-weight: lighter;
+    font-style: normal;
+}        
+
+@font-face:{
+    font-family:'Roboto'; 
+    src: url('../fonts/Roboto/Roboto-ThinItalic.ttf');
+    font-weight: lighter;
+    font-style: italic;
+}    
+
+html {
+  font-size: 16px;/*16 pixels will render better on tablets and mobile*/
+}
+
+h2 {
+  font: 1.96875rem 'Roboto', sans-serif;
+  font-style: italic;
+  
+}
+
+h2 span {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* for responsive scaling of images */
+img {
+  height: auto;
+/* ensures that the element is never larger than its container */
+  max-width: 100%;
+}
+
+/* works with the viewport meta tag*/
+@-ms-viewport {
+  width: device-width;
+}
+
+/*Cascades Section I*/
+
+.about {
+  text-align: center;
+  /*border-bottom: 0.1rem solid #d7d7d7;*/
+  padding: 3.0625rem 0 1.75rem;
+}
+
+.about h2 {
+  padding-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.15rem;
+  line-height: 2.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+
+}
+
+.address {
+  line-height: 1.5rem;
+  color: #969696;
+  padding-bottom: 3rem;
+}  
+
+.banner {
+  background:
+        url('images/banner.jpg') repeat-x center top;
+  background-size: cover, 10rem 26rem, cover;
+  height: 28.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  /* align-self: center; */
+  /* text-align: center; */
+  color: #FFF;
+  font-family: 'Roboto';
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 1.575px 1.575px 3.15px rgba(90, 90, 90, 0.75);
+  /* width: 70%; */
+}  
+
+.call-to-action{
+  font: 'Roboto-Thin';
+  font-size: 5rem;
+  text-transform: uppercase;
+  padding-right: 400px;
+}
+
+.cart {
+  align-self: flex-end;
+  order: 2;
+  width: 50px;
+}
+
+.container {
+  padding: 0 2%;
+  width: 100%;
+}
+
+
+.category {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.category-rectangle:before, .category-square:before {
+  content: " ";
+  float: left;
+}
+
+.category-square::before {
+  padding-top: 100%;
+}
+
+.category-rectangle::before {
+  padding-top: 50%;
+}
+
+.category-rectangle {
+  display: flex;
+  /* flex: 2 0 100%; */
+  max-width: 100%;
+  /* border: 4px solid #FFF; */
+}
+
+.category-square {
+  display: flex;
+  /* flex: 1 0 100%; */
+  /* max-width: 50%; */
+  /* border: 4px solid #FFF; */
+}
+
+.category-label-rect, .category-label-square {
+  font: 1.3125rem bold;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.category-label-rect a, .category-label-square a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.category-label-rect a:hover, .category-label-square a:hover {
+  color: #f5ebc6;
+}
+
+.collection {
+  font: bold 1.09375rem'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+
+.copyright {
+  padding: 4rem 0 1.5rem;
+  line-height: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  /* align-self: flex-start; */
+  order: 1;
+  width: 120px;
+}
+
+.nav {
+  margin-top: 1rem;
+  border-top: 1px solid #d7d7d7;
+  font-weight: bold;
+  order: 3;
+  padding-top: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #e2574c;
+  padding: 0 0.5rem;
+  align-self: center;
+}
+
+.nav a:hover {
+  color: {#b64036;
+  }
+  
+  .sales-pitch{
+    font-family: 'Roboto-Bold';
+    font-size: 15rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+/*Cascades Section II (Sliders & Product Roll)*/
+
+
+.laptops, .tv, .audio, .tablets, .desktops, .cellphones {
+  background:
+      linear-gradient( to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+      url: no-repeat center center;
+      background-size: cover, cover;
+      text-align: center;
+}
+
+.laptops {
+  text-align: center;
+  background: url('images/laptop-category.jpg');
+  /* background-size: contain; */
+}
+
+.tv {
+  text-align: center;
+  vertical-align: middle;
+  background: url('images/tv-category.jpg');
+}
+
+.audio {
+  text-align: center;
+  vertical-align: middle;
+  background: url('images/home-audio-category.jpg'); 
+}
+
+.tablets {
+  background: url('images/tablet-category.jpg'); 
+}
+
+.desktops {
+  background: url('images/desktop-category.jpg');
+}
+
+.cellphones {
+  background: url('images/cell-category.jpg');
+}
+
+.bx-viewport {
+  box-shadow: 0 0 5px #FFF !important;
+}
+
+.bx-clone {
+  display: none;
+}
+
+
+.products {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.products h2 {
+
+  padding: 3rem 0 2rem;
+}
+
+.products img {
+  width: 20rem;
+  padding-bottom: 1rem;
+}
+
+.product-category {
+  text-transform: uppercase;
+  font-size: 0.8rem #969696;
+  padding-bottom: 1.25rem;
+}
+
+.product-name {
+  font: 1.3125rem #e2574c'Playfair_Display', sans-serif;
+  padding-bottom: 1.25rem;
+}
+
+.product-price {
+  font: bold #969696;
+  padding-bottom: 3rem;
+}
+
+
+.sign-up {
+  background:
+  url('images/dev_board.png') no-repeat center bottom;
+  color: #FFF;
+  text-shadow: 1.75px 1.75px 3.5px rgba(100, 100, 100, 0.8);
+  text-align: center;
+  border-bottom: 0.5rem solid #FFF;
+  padding: 3rem 0;
+}
+
+.sign-up h2 {
+  font-size: 2.25rem;
+  padding: 2rem 0;
+}
+.sign-up p {
+  font-size: 1.00625rem;
+  line-height: 2.5rem;
+}
+
+.sign-up form {
+  display: block;
+  margin: 1.5rem auto 0;
+  position: relative;
+  width: 90%;
+
+.
+
+  font:;
+  
+}
+
+input {
+  font-family: 1rem 'Raleway', sans-serif;
+  line-height: 2;
+}
+
+
+input[type="email"] {
+  padding: 0.7rem;
+  padding-right: 5px;
+  width: 100%;
+  border: 0;
+  border-radius: 0px;
+  align-self: center;
+}
+
+input[type="email"]:focus {
+  outline: 0;
+  box-shadow: 3px 2px 3px  rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"] {
+  background-color: #e2574c;
+  color: #FFF;
+  font-weight: bold;
+  padding: 0.25rem 1.5rem;
+  position: absolute;
+  border-radius: 0px;
+  right: 0.25rem;
+  top: 0.25rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-color: #e2574c;
+}
+
+input[type="submit"]:focus {
+  outline: 0;
+}
+
+
+.footer {
+  font: #FFF 'Playfair_Display', sans-serif;
+  text-align: center;
+  background-color: #242424;
+}
+
+.phone-email {
+  padding-bottom: 1.5rem;
+}
+
+.phone-email a {
+  color: white;
+}
+
+.phone-email a:hover {
+  color: #b64036;
+}
+
+
+.social-media {
+  padding-bottom: 4rem;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.social-media a:hover {
+  color: #b64036;
+}
+
+.social-media li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.social-media span {
+  display: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .about-text {
+    max-width: 720px;
+  }
+
+  .aloha-info {
+   text-align: left;
+   padding-left: 1rem;
+  }
+
+  .bx-clone {
+    display: inline-block;
+  }
+
+  .bxslider li{
+    width: 50vw !important;
+  }
+
+
+  .category-rectangle {
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .category-square {
+    flex-basis: 25%;
+  } 
+
+
+  .cart {
+    order: 3;
+  }    
+
+  .container {
+    max-width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+    order: 1;
+    width: auto;
+    align-self: center;
+  }
+
+  .nav a {
+    padding: 0 0.85rem;
+  }
+
+
+  .trends, .bags, .womens {
+    /* border: 4px solid #FFF; */
+  }
+
+  .seasons {
+    font-size: 2.49375rem;
+  }
+
+  .sign-up form {
+    width: 70%;
+  }
+
+
+  .social-media {
+
+    padding: 4rem 2rem 0 0;
+  }
+
+  .social-media li {
+    display: block;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .social-media span {
+    display: inline;
+    padding-left: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 1240px) {
+
+
+  .container {
+    max-width: 1240px;
+  }
+
+
+  .nav-menu a {
+    padding: 0 2rem;
+    order: 2;
+  }
+
+
+  .about-text {
+    width: 720px;
+  }
+
+
+  .banner {
+    background-size: cover, 16rem 42rem, contain;
+    height: 35rem;
+  }
+
+  .seasons {
+    font-size: 3.4125rem;
+  }
+
+
+  .bxslider li{
+    width: 25vw !important;
+  }
+
+
+  .heading-info {
+    font: 'Roboto' ;
+  }
+
+  .products-list li {
+    width: 25%;
+  }
+
+
+  .sign-up-text {
+    width: 720px;
+  }
+
+
+  .social-media {
+    padding-right: 4.5rem;
+  }
+
+
+}
