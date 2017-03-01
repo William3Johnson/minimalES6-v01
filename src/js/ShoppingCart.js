@@ -21,16 +21,19 @@ export default class ShoppingCart{
     }
 
      addItemToCart (sku){
+        console.log(sessionStorage);
         let numMatches = 0;
         for(let i = 0; 0<sessionStorage.length; i++){
             if(sessionStorage.key(i) == sku){
                let newVal = sessionStorage.getItem(sku);
                 sessionStorage.setItem(sku, parseInt(newVal)+1);
                 numMatches = 1;
+                console.log("Value to Sku");
             }
         }
     
         if (numMatches == 0){
+            console.log("fsfdsfsdfsdfdsfdsfds");
             sessionStorage.setItem(sku, 1);
             //addItemToCart(1);
             console.log('addingItem to Cart');
