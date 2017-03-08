@@ -73,6 +73,7 @@ export default class CatalogView{
          * </div>
           * */
         for (let p=0; p<products.length; p++){
+          console.log(p);
             let product = products[p];
             console.log(product);
             // each product is a product object

@@ -633,6 +633,12 @@ input[type="submit"]:focus {
     text-align: center;
   }
 
+.item_confirm{
+  display: none;
+}
+
+
+
   .nav {
     order: 1;
     width: auto;

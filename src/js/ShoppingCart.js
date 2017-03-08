@@ -21,14 +21,16 @@ export default class ShoppingCart{
     }
 
      addItemToCart (sku){
-        console.log(sessionStorage);
+        console.log(sessionStorage.length);
         let numMatches = 0;
-        for(let i = 0; 0<sessionStorage.length; i++){
+        for(let i = 0; i > sessionStorage.length; i++){
             if(sessionStorage.key(i) == sku){
                let newVal = sessionStorage.getItem(sku);
                 sessionStorage.setItem(sku, parseInt(newVal)+1);
                 numMatches = 1;
                 console.log("Value to Sku");
+                $("item_confirm").show();
+                console.log(item_confirm);
             }
         }
     
