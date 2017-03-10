@@ -30,10 +30,12 @@ export default class ShoppingCart{
                 numMatches = 1;
                 console.log("Value to Sku");
                 $("item_confirm").show();
-                console.log(item_confirm);
+                console.log('item_confirm');
             }
         }
     
+
+
         if (numMatches == 0){
             console.log("fsfdsfsdfsdfdsfdsfds");
             sessionStorage.setItem(sku, 1);
@@ -42,6 +44,33 @@ export default class ShoppingCart{
         }
 
     }
+
+
+    showQuickView (sku){
+        console.log(sessionStorage.length);
+        let numMatches = 0;
+        for(let i = 0; i > sessionStorage.length; i++){
+            if(sessionStorage.key(i) == sku){
+               let newVal = sessionStorage.showquickView(sku);
+                sessionStorage.setItem(sku, parseInt(newVal)+1);
+                numMatches = 1;
+                console.log("Value to Sku");
+                $( ".target" ).toggle();
+                console.log("toggle");
+            }
+        }
+    
+
+        if (numMatches == 0){
+            console.log("lmnopqrstuwxuvy");
+            sessionStorage.setItem(sku, 1);
+            //addItemToCart(1);
+            console.log('addingItem to Cart');
+        }
+
+    }
+
+
     removeItemFromCart(){
 
     }

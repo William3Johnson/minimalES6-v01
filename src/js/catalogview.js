@@ -54,6 +54,24 @@ export default class CatalogView{
        } //create function addItemToCart ()
     }   
 
+onQuickViewButton(theApp){
+        console.log('lreihferlhfelrh');
+        return function(e){
+            console.log(e.target);
+            let theSku = e.target.getAttribute("data-sku");
+            console.log(theSku);
+            console.log(theApp);
+            console.log(theApp.shoppingCart);
+            theApp.shoppingCart.showQuickView(theSku);
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").toggle();
+                });
+            });       
+                console.log('button');
+                console.log('p');
+       } //create function addItemToCart ()
+    }   
     
         addProductsToCarousel(products, theApp){
 
@@ -122,6 +140,7 @@ export default class CatalogView{
             quickViewButton.setAttribute("type", "button");
             let quickViewTextNode = document.createTextNode("Quick View");
             quickViewButton.appendChild(quickViewTextNode);
+            quickViewButton.addEventListener("click", this.onQuickViewButton(this.theApp),false);
             
         
             let addToCartButton = document.createElement ("button");
