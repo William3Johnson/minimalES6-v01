@@ -133,7 +133,7 @@ img {
 
 .banner {
   background:
-        url('images/banner.jpg') repeat-x center top;
+  url('images/banner.jpg') repeat-x center top;
   background-size: cover, 10rem 26rem, cover;
   height: 28.5rem;
   display: flex;

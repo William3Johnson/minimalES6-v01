@@ -205,7 +205,7 @@ img {
 }
 
 #carousel.owl-carousel.owl-loaded.owl-drag {
-  padding-top: 25rem;
+  padding-top: 4rem;
 
 }
 
@@ -288,9 +288,13 @@ img {
   flex-wrap: wrap;
 }
 
+header.header.container {
+  max-width: 95%;
+}
+
 .header-conatainer{
   padding: 1 2 1 2rem;
-  max-width: 1350px;
+  max-width: 1450px;
 }
 
 h2.stuff {
@@ -321,7 +325,7 @@ h2.stuff {
   width: 100%;
 }
 
-.nav a {
+nav.nav-menu a {
   text-transform: uppercase;
   text-decoration: none;
   color: #e2574c;
@@ -329,7 +333,13 @@ h2.stuff {
   align-self: center;
 }
 
-.nav a:hover {
+nav.nav-menu {
+  order: 2;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+nav.nav-menu a:hover {
   color: #b64036;
 }
 
@@ -340,6 +350,7 @@ h2.stuff {
   text-align: center;
 }
 
+
 /*Cascades Section II (Sliders & Product Roll)*/
 
 .seasons {
@@ -349,40 +360,48 @@ h2.stuff {
 .Electronics, .tv, .audio, .tablets, .desktops, .cellphones {
   background:
       linear-gradient( to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-      url: no-repeat center center;
       background-size: cover, cover;
       text-align: center;
 }
 
+span.category-label-square, span.category-label-rect {
+  color: white;
+  width: 100%;
+}
 
 .Electronics {
   text-align: center;
   background: url('images/laptop-category.jpg');
-  /* background-size: contain; */
+  background-size: contain; 
 }
 
 .tv {
   text-align: center;
   vertical-align: middle;
   background: url('images/tv-category.jpg');
+  background-size: contain;
 }
 
 .audio {
   text-align: center;
   vertical-align: middle;
-  background: url('images/home-audio-category.jpg'); 
+  background: url('images/home-audio-category.jpg');
+  background-size: contain; 
 }
 
 .tablets {
-  background: url('images/tablet-category.jpg'); 
+  background: url('images/tablet-category.jpg');
+  background-size: contain; 
 }
 
 .desktops {
   background: url('images/desktop-category.jpg');
+  background-size: contain;
 }
 
 .cellphones {
   background: url('images/cell-category.jpg');
+  background-size: contain;
 }
 
 .bx-viewport {
@@ -470,7 +489,7 @@ h2.stuff {
 }
 .sign-up p {
   font-size: 1.00625rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
 }
 
 .sign-up form {
@@ -499,9 +518,11 @@ input[type="email"] {
   padding-right: 0px;
   background: url('images/ports.jpg');
   width: 100%;
-  border: 0;
-  border-radius: 0px;
-  border-collapse: all;
+  border-radius: 3px;
+  border-color: white;
+  font-size: 1em;
+  color: white;
+  height: 15px;
 }
 
 input[type="email"]:focus {
@@ -513,12 +534,12 @@ input[type="submit"] {
   background-color: black;
   color: #FFF;
   font-weight: bold;
-  padding: 0.85rem 1.5rem;
+  padding: .595rem 3.5rem;
   position: absolute;
   border-radius: 1px;
   border-style: groove;
   border-color: #ffffe0;
-  right: 0.025rem;
+  right: -0.25rem;
   top: 0.025rem;
   cursor: pointer;
 }
@@ -541,6 +562,7 @@ input[type="submit"]:focus {
 
 .phone-email {
   padding-bottom: 1.5rem;
+  color: white;
 }
 
 .phone-email a {
@@ -611,11 +633,17 @@ input[type="submit"]:focus {
   }    
 
   .container {
-    max-width: 600px;
+    max-width: 1440px;
   }
 
   div.copyright{
     color: white;
+  }
+
+  div.owl-next, div.owl-prev {
+    text-transform: uppercase;
+  }
+
   }
 
   .footer {
