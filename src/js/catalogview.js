@@ -141,7 +141,7 @@ onQuickViewButton(theApp){
             let quickViewTextNode = document.createTextNode("Quick View");
             quickViewButton.appendChild(quickViewTextNode);
             quickViewButton.addEventListener("click", this.onQuickViewButton(this.theApp),false);
-            
+
         
             let addToCartButton = document.createElement ("button");
             addToCartButton.setAttribute("class", "addToCartButton");
