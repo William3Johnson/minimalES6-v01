@@ -667,10 +667,17 @@ input[type="submit"]:focus {
     text-align: center;
   }
 
-  h2.heading-italics {
+  .heading-italics {
+    font-family: 'Roboto-MediumItalic';
+    font-size:2.5rem;
+    text-align: center;  
+  }
+
+  .heading-bold-italics {
     font-family: 'Roboto-BoldItalic';
     font-size:2.5rem;
     text-align: center;
+    color: #4CAF50;
   }
 
   .nav {
