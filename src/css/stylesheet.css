@@ -178,6 +178,7 @@ img {
   /* width: 70%; */
 }  
 
+
 .clickhere {
   background-color: none;
   border: solid #4CAF50;
@@ -197,17 +198,19 @@ img {
 }
 
 .call-to-action {
-    padding-left: 24rem;
-    font-family: 'Roboto-Thin';
-    font-size: 1.5rem;
+  padding-left: 25rem;
+  font-family: 'Roboto-Thin';
+  font-size: 1.5rem;
 
 
 }
 
 #carousel.owl-carousel.owl-loaded.owl-drag {
   padding-top: 4rem;
+  max-width: 7500px;
 
 }
+
 
 .cart {
   align-self: flex-end;
@@ -218,6 +221,12 @@ img {
 .container {
   padding: 0 2%;
   width: 100%;
+}
+
+section.about { 
+  background: url('images/speaker_grill.jpg');
+  text-align: center;
+  color: white;
 }
 
 
@@ -273,6 +282,7 @@ img {
   line-height: 1.5rem;
   font-size: white;
 }
+ 
 
 .Got-Stuff {
   padding-bottom: 125px;
@@ -652,16 +662,16 @@ input[type="submit"]:focus {
   }
 
   .heading-bold{
-    font-family: 'Roboto-Thin';
+    font-family: 'Roboto-Bold';
     font-size:2.5rem;
     text-align: center;
   }
 
-.item_confirm{
-  display: none;
-}
-
-
+  h2.heading-italics {
+    font-family: 'Roboto-BoldItalic';
+    font-size:2.5rem;
+    text-align: center;
+  }
 
   .nav {
     order: 1;
