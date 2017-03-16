@@ -28,9 +28,6 @@ export default class ShoppingCart{
                let newVal = sessionStorage.getItem(sku);
                 sessionStorage.setItem(sku, parseInt(newVal)+1);
                 numMatches = 1;
-                console.log("Value to Sku");
-                $("item_confirm").show();
-                console.log('item_confirm');
             }
         }
     
@@ -46,23 +43,42 @@ export default class ShoppingCart{
     }
 
 
-    showQuickView (sku){
+    showQuickView (sku, theApp){
         console.log(sessionStorage.length);
+        console.log(theApp); 
         let numMatches = 0;
         for(let i = 0; i > sessionStorage.length; i++){
             if(sessionStorage.key(i) == sku){
-               let newVal = sessionStorage.showquickView(sku);
-                sessionStorage.setItem(sku, parseInt(newVal)+1);
-                numMatches = 1;
-                console.log("Value to Sku");
-                $( ".target" ).toggle();
-                console.log("toggle");
-            }
-        }
+                // the user must:
+                // see a popup
+                // show the item in the popup that matches the sku in session storage
+                // the following item details must be shown
+                // product name, amount, price, description
+
+                //let matchingSku = sessionStorage.key(i);
+                //console.log(matchingSku);
+
+
+          for(let count = 0; count > theApp.products.length; count++){
+                //find the product that matches matching Sku
+                //if (theApp.products.sku[count] == matchingSku){}
+                //once the procuct is found create variables
+                //that store product name, price, description, image
+                // then use those variables to store the product name,
+                // price, description, image
+                //let matchingProductPrice = theApp.products[count]
+                // do the same for the other three pieces of info you need
+                // THEN display a popup that shows the values of the four variables
+                // use JQUERY to display a popup
+          
+
+            }}}
+        
+    
     
 
         if (numMatches == 0){
-            console.log("lmnopqrstuwxuvy");
+            console.log("lmnopqrstuwxuvy")
             sessionStorage.setItem(sku, 1);
             //addItemToCart(1);
             console.log('addingItem to Cart');

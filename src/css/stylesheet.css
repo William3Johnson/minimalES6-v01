@@ -1,5 +1,7 @@
 {Margin:0; Border: 0;}
-      
+ div.owl-stage{
+  width:7500px !important;
+ }     
 
 @font-face {
     font-family:'Roboto'; 
@@ -38,14 +40,14 @@
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('fonts/Roboto/Roboto-LightItalic.ttff');
+    src: url('/fonts/Roboto/Roboto-LightItalic.ttff');
     font-weight: lighter;
     font-style: italic;
 }    
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('fonts/Roboto/Roboto-Medium.ttf');
+    src: url('./fonts/Roboto/Roboto-Medium.ttf');
     font-weight: medium;
     font-style: normal;
 }    
@@ -84,7 +86,7 @@ html {
 }
 
 h2 {
-  font: 1.96875rem 'Playfair_Display', sans-serif;
+  font: 1.96875rem , sans-serif;
   font-style: italic;
   
 }
@@ -157,15 +159,16 @@ img {
   padding-bottom: 3rem;
 }  
 
-.banner {
+
+section.banner {
   background:
-  linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
-  url('assets/images/banner.jpg') repeat-x center top;
-  background-size: cover, 10rem 26rem, cover;
-  height: 28.5rem;
+  url('assets/images/banner.jpg') no-repeat center;
+  background-size: contain 10em 26em;
+  height: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  /*border-bottom: ;*/
 }
 
 .banner-text {
@@ -230,7 +233,7 @@ section.about {
 }
 
 
-.category {
+.category-flex {
   display: flex;
   flex-wrap: wrap;
 }
@@ -445,7 +448,7 @@ span.category-label-square, span.category-label-rect {
 }
 
 .product-name {
-  font: 1.3125rem #e2574c'Playfair_Display', sans-serif;
+  font: 1.3125rem #e2574c'Ro', sans-serif;
   padding-bottom: 1.25rem;
 }
 
@@ -544,12 +547,13 @@ input[type="submit"] {
   background-color: black;
   color: #FFF;
   font-weight: bold;
-  padding: .595rem 3.5rem;
+  padding: .675rem 3.5rem;
   position: absolute;
   border-radius: 1px;
   border-style: groove;
   border-color: #ffffe0;
   right: -0.25rem;
+  bottom: -0.01rem;
   top: 0.025rem;
   cursor: pointer;
 }
@@ -652,6 +656,7 @@ input[type="submit"]:focus {
 
   div.owl-next, div.owl-prev {
     text-transform: uppercase;
+    font-weight: bold;
   }
 
   }
@@ -727,7 +732,7 @@ input[type="submit"]:focus {
 
 
   .container {
-    max-width: 1350px;
+    max-width: 1440px;
   }
 
 

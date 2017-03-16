@@ -28,9 +28,9 @@ export default class CatalogView{
                   601:{
                       items:2
                   }, //from 600 to 1050 screen
-                  1050:{
+                  1440:{
                       items:4
-                  } //from 1050 to 1240 screen
+                  } //from 1050 to 1440 screen
               }
 
           });
@@ -63,13 +63,15 @@ onQuickViewButton(theApp){
             console.log(theApp);
             console.log(theApp.shoppingCart);
             theApp.shoppingCart.showQuickView(theSku);
+
+            /* why havev
             $(document).ready(function(){
                 $("button").click(function(){
                     $("p").toggle();
                 });
             });       
                 console.log('button');
-                console.log('p');
+                console.log('p'); */
        } //create function addItemToCart ()
     }   
     
