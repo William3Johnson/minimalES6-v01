@@ -499,6 +499,7 @@ span.category-label-square, span.category-label-rect {
 .sign-up h2 {
   font-size: 2.25rem;
   padding: 2rem 0;
+  color: #48b430;
 }
 .sign-up p {
   font-size: 1.00625rem;
@@ -532,6 +533,7 @@ input[type="email"] {
   background: url('images/ports.jpg');
   width: 100%;
   border-radius: 3px;
+  border-width:5px;
   border-color: white;
   font-size: 1em;
   color: white;
@@ -552,7 +554,7 @@ input[type="submit"] {
   border-radius: 1px;
   border-style: groove;
   border-color: #ffffe0;
-  right: -0.25rem;
+  right: -0.5rem;
   bottom: -0.01rem;
   top: 0.025rem;
   cursor: pointer;
@@ -664,6 +666,7 @@ input[type="submit"]:focus {
   .footer {
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
   }
 
   .heading-bold{
@@ -671,6 +674,12 @@ input[type="submit"]:focus {
     font-size:2.5rem;
     text-align: center;
   }
+
+
+  span.heading-bold-white{
+    color: white;
+  }
+
 
   .heading-italics {
     font-family: 'Roboto-MediumItalic';

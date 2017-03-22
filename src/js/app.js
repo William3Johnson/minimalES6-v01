@@ -12,8 +12,9 @@ export default class App {
         this.productData = null; // this will store all our data
         this.products = null; // stores specifically the products
         this.initBestBuyWebService();
-        this.catalogView = new CatalogView(); // this will display our data
         this.shoppingCart = new ShoppingCart();
+        this.catalogView = new CatalogView(this.theApp); // this will display our data
+
         // call the initBestBuyWebService to initialize the
         // BestBuy Web Service and return the data
 

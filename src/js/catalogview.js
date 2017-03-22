@@ -6,9 +6,9 @@
 // Perhaps in a carousel.
 export default class CatalogView{
 
-    constructor(){
+    constructor(theApp){
         // this.initCarousel();
-        this.theApp = null;
+        this.theApp = theApp;
         this.carousel = document.getElementsByClassName("owl-carousel");
 
     }
@@ -34,11 +34,7 @@ export default class CatalogView{
               }
 
           });
-      }); 
-
-
-
-        
+      });       
 
     }
 
@@ -47,31 +43,22 @@ export default class CatalogView{
         return function(e){
             console.log(e.target);
             let theSku = e.target.getAttribute("data-sku");
-            console.log(theSku);
+            /*console.log(theSku);
             console.log(theApp);
-            console.log(theApp.shoppingCart);
+            console.log(theApp.shoppingCart);*/
             theApp.shoppingCart.addItemToCart(theSku);
        } //create function addItemToCart ()
     }   
 
 onQuickViewButton(theApp){
-        console.log('lreihferlhfelrh');
-        return function(e){
-            console.log(e.target);
-            let theSku = e.target.getAttribute("data-sku");
-            console.log(theSku);
-            console.log(theApp);
-            console.log(theApp.shoppingCart);
-            theApp.shoppingCart.showQuickView(theSku);
 
-            /* why havev
-            $(document).ready(function(){
-                $("button").click(function(){
-                    $("p").toggle();
-                });
-            });       
-                console.log('button');
-                console.log('p'); */
+        return function(e){
+          console.log('button event handler');
+            console.log(e.target);
+            console.log(theApp);
+            let theSku = e.target.getAttribute("data-sku");
+            theApp.shoppingCart.showQuickView(theSku, theApp);
+            
        } //create function addItemToCart ()
     }   
     
@@ -142,6 +129,8 @@ onQuickViewButton(theApp){
             quickViewButton.setAttribute("type", "button");
             let quickViewTextNode = document.createTextNode("Quick View");
             quickViewButton.appendChild(quickViewTextNode);
+
+            console.log(this.theApp);
             quickViewButton.addEventListener("click", this.onQuickViewButton(this.theApp),false);
 
         
@@ -162,7 +151,7 @@ onQuickViewButton(theApp){
             newDiv.appendChild(quickViewButton); // added new quickView Button
             newDiv.appendChild(addToCartButton); // added new addToCartButton
             /*
-            * <div>
+             <div>
                 <img src="somepicfrombestbuy"></img.
                 <p>buy me now</p>
                 <h3>Dell Inspirion 12"</h3>
@@ -179,5 +168,12 @@ onQuickViewButton(theApp){
 
     }
 
+createCartView(theApp, products, Sku){
+  
+
+  
 }
+
+}
+
 

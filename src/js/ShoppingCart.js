@@ -21,9 +21,10 @@ export default class ShoppingCart{
     }
 
      addItemToCart (sku){
-        console.log(sessionStorage.length);
         let numMatches = 0;
-        for(let i = 0; i > sessionStorage.length; i++){
+        console.log(sessionStorage.length);
+        for(let i = 0; i < sessionStorage.length; i++){
+            console.log(sessionStorage);
             if(sessionStorage.key(i) == sku){
                let newVal = sessionStorage.getItem(sku);
                 sessionStorage.setItem(sku, parseInt(newVal)+1);
@@ -34,60 +35,57 @@ export default class ShoppingCart{
 
 
         if (numMatches == 0){
-            console.log("fsfdsfsdfsdfdsfdsfds");
             sessionStorage.setItem(sku, 1);
-            //addItemToCart(1);
-            console.log('addingItem to Cart');
         }
 
     }
 
 
-    showQuickView (sku, theApp){
+    showQuickView (sku, products, theApp){
+        console.log("click on quickview");
         console.log(sessionStorage.length);
         console.log(theApp); 
         let numMatches = 0;
-        for(let i = 0; i > sessionStorage.length; i++){
-            if(sessionStorage.key(i) == sku){
-                // the user must:
+   
+
+        for(let count = 0; count < theApp.products.length; count++){
+                //find the product that matches matching Sku
+                console.log(theApp.products);
+            if(theApp.products[count].sku == sku){
+                let theProduct = theApp.products[count];
                 // see a popup
                 // show the item in the popup that matches the sku in session storage
                 // the following item details must be shown
-                // product name, amount, price, description
+                 // product name, amount, price, description
 
-                //let matchingSku = sessionStorage.key(i);
-                //console.log(matchingSku);
+        let showQuickView = $('#showQuickView');
+        for(let i = 0; i < sessionStorage.length; i++){
+            let currentSku = sessionStorage(currentSku);
 
+        for(let p = 0; p < proudctLength; p++){
+            let currentProduct = products[p];
+            let productSku = currentProductSku;
 
-          for(let count = 0; count > theApp.products.length; count++){
-                //find the product that matches matching Sku
-                //if (theApp.products.sku[count] == matchingSku){}
-                //once the procuct is found create variables
-                //that store product name, price, description, image
-                // then use those variables to store the product name,
-                // price, description, image
-                //let matchingProductPrice = theApp.products[count]
-                // do the same for the other three pieces of info you need
-                // THEN display a popup that shows the values of the four variables
-                // use JQUERY to display a popup
-          
-
-            }}}
-        
-    
-    
-
-        if (numMatches == 0){
-            console.log("lmnopqrstuwxuvy")
-            sessionStorage.setItem(sku, 1);
-            //addItemToCart(1);
-            console.log('addingItem to Cart');
+        if (productSku == currentSku){
+            let img = currentProduct.image;
+            let name = currentProduct.name;
+            let price = currentProduct.price;
+            output = <div id="Flex this" class ="whatev">
+                     <img src = "${img}, height=110, alt= "${name}">
+                     <p>${name} ${price} ${currentQty}</p>
         }
+        }
+        }
+
+            }
+                
+        }
+            
 
     }
 
 
-    removeItemFromCart(){
+   /* removeItemFromCart(){
 
     }
 
@@ -97,7 +95,8 @@ export default class ShoppingCart{
 
     clearCart(){
         // clear the entire cart
-    }
-
+    }*/
 
 }
+
+
