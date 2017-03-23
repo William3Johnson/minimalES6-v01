@@ -40,7 +40,7 @@
 
 @font-face {
     font-family:'Roboto'; 
-    src: url('/fonts/Roboto/Roboto-LightItalic.ttff');
+    src: url('/fonts/Roboto/Roboto-LightItalic.ttf');
     font-weight: lighter;
     font-style: italic;
 }    
@@ -175,7 +175,7 @@ section.banner {
   /* align-self: center; */
   /* text-align: center; */
   color: #FFF;
-  font-family: 'Roboto-Bold';
+  font-family: 'Roboto-Bold', sans-serif;
   font-size: 5rem;
   text-shadow: 1.575px 1.575px 3.15px rgba(90, 90, 90, 0.75);
   /* width: 70%; */
@@ -201,11 +201,9 @@ section.banner {
 }
 
 .call-to-action {
-  padding-left: 25rem;
-  font-family: 'Roboto-Thin';
+  padding-left: 24rem;
+  font-family: 'Roboto-Thin', sans-serif;
   font-size: 1.5rem;
-
-
 }
 
 #carousel.owl-carousel.owl-loaded.owl-drag {
@@ -287,7 +285,6 @@ section.about {
   line-height: 1.5rem;
   font-size: white;
 }
- 
 
 .Got-Stuff {
   padding-bottom: 125px;
@@ -313,7 +310,7 @@ header.header.container {
 }
 
 h2.stuff {
-  font-family: 'Roboto-Thin';
+  font-family: 'Roboto-Thin', sans-serif;
   font-style: normal;
   font-size: 2rem;
   color: black;
@@ -360,7 +357,7 @@ nav.nav-menu a:hover {
 
 .sales-pitch {
 
-  font-family: 'Roboto-Regular';
+  font-family: 'Roboto-Regular', sans-serif;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -450,7 +447,7 @@ span.category-label-square, span.category-label-rect {
 }
 
 .product-name {
-  font: 1.3125rem #e2574c'Ro', sans-serif;
+  font: 1.3125rem #e2574c'Roboto-Regular', sans-serif;
   padding-bottom: 1.25rem;
 }
 
@@ -468,6 +465,10 @@ span.category-label-square, span.category-label-rect {
 .product-type {
   font-style: normal;
   color: #808080;
+}
+
+.popquick{
+  background-color: 10em 15em grey, contain;
 }
 
 .quickViewButton {
@@ -674,7 +675,7 @@ input[type="submit"]:focus {
   }
 
   .heading-bold{
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
     font-size:2.5rem;
     text-align: center;
   }
@@ -687,13 +688,13 @@ input[type="submit"]:focus {
 
 
   .heading-italics {
-    font-family: 'Roboto-MediumItalic';
+    font-family: 'Roboto-MediumItalic', sans-serif;
     font-size:2.5rem;
     text-align: center;  
   }
 
   .heading-bold-italics {
-    font-family: 'Roboto-BoldItalic';
+    font-family: 'Roboto-BoldItalic',sans-serif;
     font-size:2.5rem;
     text-align: center;
     color: #4CAF50;
@@ -719,6 +720,7 @@ input[type="submit"]:focus {
   }
 
   .sign-up form {
+    font-family: 'Roboto-Thin', sans-serif;
     width: 35%;
     text-align: center;
   }

@@ -33,7 +33,6 @@ export default class ShoppingCart{
         }
     
 
-
         if (numMatches == 0){
             sessionStorage.setItem(sku, 1);
         }
@@ -41,54 +40,47 @@ export default class ShoppingCart{
     }
 
 
-    showQuickView (sku, products, theApp){
+    showQuickView (sku, products){
         console.log("click on quickview");
-        console.log(sessionStorage.length);
-        console.log(theApp); 
         let numMatches = 0;
    
-
-        for(let count = 0; count < theApp.products.length; count++){
+                console.log("*******");
+                console.log(products);
+        for(let count = 0; count < products.length; count++)
+        {
                 //find the product that matches matching Sku
-                console.log(theApp.products);
-            if(theApp.products[count].sku == sku){
-                let theProduct = theApp.products[count];
-                // see a popup
-                // show the item in the popup that matches the sku in session storage
+
+            if(products[count].sku == sku){
+                let theProduct = products[count];
+                let name = theProduct.name; 
+                let price = theProduct.regularPrice;
+                let img = theProduct.thumbnailImage;
+                let desc = theProduct.longDescription;
+                let status = theProduct.orderable;
+                console.log(theProduct);
+                console.log(price);
+                console.log(img);
+                console.log(name);
+                console.log(desc);
+                console.log(status);
+
+                // show the item in the that matches the sku in session storage
                 // the following item details must be shown
                  // product name, amount, price, description
-
-        let showQuickView = $('#showQuickView');
-        for(let i = 0; i < sessionStorage.length; i++){
-            let currentSku = sessionStorage(currentSku);
-
-        for(let p = 0; p < proudctLength; p++){
-            let currentProduct = products[p];
-            let productSku = currentProductSku;
-
-        if (productSku == currentSku){
-            let img = currentProduct.image;
-            let name = currentProduct.name;
-            let price = currentProduct.price;
-            /*output = <div id="Flex this" class ="whatev">"
-                     <img src = "${img}, height=110, alt= "${name}">
-                     <p>${name}, ${price}, ${currentQty}</p>
-        }
-        }
-        }*/
+                //let showQuickView = $('#showQuickView');
+                output = `<div id= "popup" class="popquick">
+                <img src= "${img}"height ="110", alt="${name}">
+                <p> ${name} ${price} ${status}</p>
+                </div>`                 
+                console.log("popup");
             }
-            }
-                
-        }
-            
         }
     }
 
 
-   /* removeItemFromCart(){
 
-    }
-
+    
+    /* removeItemFromCart(){
     updateQuantityofItemInCart(sku,qty){
 
     }
@@ -97,5 +89,4 @@ export default class ShoppingCart{
         // clear the entire cart
     }*/
 
-}
 }

@@ -57,7 +57,7 @@ onQuickViewButton(theApp){
             console.log(e.target);
             console.log(theApp);
             let theSku = e.target.getAttribute("data-sku");
-            theApp.shoppingCart.showQuickView(theSku, theApp);
+            theApp.shoppingCart.showQuickView(theSku, theApp.products);
             
        } //create function addItemToCart ()
     }   
