@@ -130,6 +130,18 @@ onQuickViewButton(theApp){
             let quickViewTextNode = document.createTextNode("Quick View");
             quickViewButton.appendChild(quickViewTextNode);
 
+            /*newDiv.appendHTML(newImg);
+            newDiv.appendHTML(newName);
+            newDiv.appendHTML(newPrice);
+            newDiv.appendHTML(newStatus);
+            newDiv.appendHTML(showQuickView);
+            newDiv.appendHTML();
+            
+             <img src="${img}" height="110" alt="${name}">
+                <p> ${name} ${price} ${status}</p> */
+
+            
+
             console.log(this.theApp);
             quickViewButton.addEventListener("click", this.onQuickViewButton(this.theApp),false);
 

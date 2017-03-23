@@ -54,7 +54,7 @@ export default class ShoppingCart{
                 let theProduct = products[count];
                 let name = theProduct.name; 
                 let price = theProduct.regularPrice;
-                let img = theProduct.thumbnailImage;
+                let img = theProduct.image;
                 let desc = theProduct.longDescription;
                 let status = theProduct.orderable;
                 console.log(theProduct);
@@ -68,11 +68,34 @@ export default class ShoppingCart{
                 // the following item details must be shown
                  // product name, amount, price, description
                 //let showQuickView = $('#showQuickView');
-                output = `<div id= "popup" class="popquick">
-                <img src= "${img}"height ="110", alt="${name}">
-                <p> ${name} ${price} ${status}</p>
-                </div>`                 
-                console.log("popup");
+                let output = `
+                <img src="${img}" height="110" alt="${name}">
+                <p> ${name} ${price} ${status}</p>`;
+
+                console.log(output);
+
+                $(function() {
+                    console.log(output);
+                    $('.popup-inner').show();
+                    $('.popup-inner').append(output);
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+ 
+        e.preventDefault();
+        $( "quickViewButton" ).appendTo( "#popup" );
+    });
+ 
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+ 
+        e.preventDefault();
+        $( "quickViewButton" ).appendTo( "#popup" );
+    });
+});
             }
         }
     }
