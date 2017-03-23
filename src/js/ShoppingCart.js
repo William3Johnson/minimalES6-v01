@@ -70,18 +70,18 @@ export default class ShoppingCart{
             let img = currentProduct.image;
             let name = currentProduct.name;
             let price = currentProduct.price;
-            output = <div id="Flex this" class ="whatev">
+            /*output = <div id="Flex this" class ="whatev">"
                      <img src = "${img}, height=110, alt= "${name}">
-                     <p>${name} ${price} ${currentQty}</p>
+                     <p>${name}, ${price}, ${currentQty}</p>
         }
         }
-        }
-
+        }*/
+            }
             }
                 
         }
             
-
+        }
     }
 
 
@@ -98,5 +98,4 @@ export default class ShoppingCart{
     }*/
 
 }
-
-
+}

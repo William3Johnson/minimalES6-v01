@@ -168,10 +168,10 @@ onQuickViewButton(theApp){
 
     }
 
-createCartView(theApp, products, Sku){
-  
+  show(theApp, products, Sku){
 
-  
+
+
 }
 
 }
